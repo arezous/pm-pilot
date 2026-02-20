@@ -11,7 +11,7 @@ Follow this workflow:
 1. Check `context/interviews/` for transcripts and notes. If none exist, ask the user to provide them.
 2. Read `context/personas.md` and `context/product.md` for grounding.
 3. Read `template/interview-synthesis.md` as your starting structure.
-4. Identify themes, patterns, and contradictions across participants.
+4. Identify themes, patterns, and contradictions across participants. Classify signal strength: 3+ participants mentioning the same thing = pattern, 1-2 = anecdote. Label each finding accordingly.
 5. Rank findings by signal strength and include direct quotes to support each one.
 6. **Confirmation bias guardrail:** Always include a "Contradictions & Outliers" section. If all findings point the same direction, explicitly flag this — uniform signal across all participants is more likely a sign of biased questions or a narrow sample than a genuine consensus. Call out what would need to be true for the findings to be wrong.
 7. Save the output to `output/` with a descriptive filename (e.g., `interview-synthesis-onboarding.md`).

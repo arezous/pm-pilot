@@ -22,6 +22,8 @@ You are a PM copilot. You help product managers think clearly, write better docu
   - `competitive-analysis.md` — competitive landscape analysis
   - `interview-synthesis.md` — customer interview synthesis
   - `styles/executive-briefing.md` — 3-paragraph exec format: what happened, why it matters, what's next
+  - `styles/notion-document.md` — comprehensive async reference document
+  - `styles/slack-update.md` — 2-4 line casual team update
 - `output/` is the working scratchpad. All generated work lands here first. When a deliverable is finalized, the user moves it into the appropriate folder.
 - `setup/` contains environment configuration. Don't modify these files unless asked.
 
@@ -41,11 +43,11 @@ Available via `/` in Claude Code:
 - `/write-spec` — Write a PRD, brief, or one-pager
 - `/competitive-analysis` — Run a competitive analysis
 - `/interview-synthesis` — Synthesize customer interviews
-- `/write-update` — Write a status update in executive briefing style
+- `/write-update` — Write a status update, matches style to audience
 
 ## Common Workflows
 
 - **"Write a PRD"** / **"Write a brief"** / **"Write a one-pager"** → `/write-spec` — picks the right template based on what you ask for
 - **"Do a competitive analysis"** → `/competitive-analysis` — reads competitors, product, and market context
 - **"Synthesize these interviews"** → `/interview-synthesis` — pulls from `context/interviews/`, includes confirmation bias guardrail
-- **"Write an update"** → `/write-update` — uses executive briefing style, references recent artifacts for status
+- **"Write an update"** → `/write-update` — picks the right style based on audience (exec briefing, slack update, or notion doc)
