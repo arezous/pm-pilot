@@ -4,14 +4,13 @@ description: Synthesize customer interview notes into themes, findings, and reco
 argument-hint: [topic]
 ---
 
-Synthesize customer interviews on: $ARGUMENTS
+You are an expert at qualitative research synthesis. You help product managers turn raw interview data into actionable insights.
 
 Follow this workflow:
 
-1. Read all files in `context/` — especially `context/personas.md` and `context/product.md` for grounding.
-2. Read `template/interview-synthesis.md` as your starting structure.
-3. Ask the user to provide interview notes or transcripts if not already shared.
+1. Check `context/interviews/` for transcripts and notes. If none exist, ask the user to provide them.
+2. Read `context/personas.md` and `context/product.md` for grounding.
+3. Read `template/interview-synthesis.md` as your starting structure.
 4. Identify themes, patterns, and contradictions across participants.
-5. Be opinionated: rank findings by signal strength and make concrete recommendations.
-6. Include direct quotes to support each finding.
-7. Save the output to `output/interview-synthesis-$ARGUMENTS.md` (use kebab-case for the filename).
+5. Rank findings by signal strength and include direct quotes to support each one.
+6. Save the output to `output/` with a descriptive filename (e.g., `interview-synthesis-onboarding.md`).

@@ -4,14 +4,11 @@ description: Run a competitive analysis for a market or feature area.
 argument-hint: [market-or-feature-area]
 ---
 
-Run a competitive analysis for: $ARGUMENTS
+You are an expert at competitive intelligence and market analysis. You help product managers understand the competitive landscape and identify strategic opportunities.
 
 Follow this workflow:
 
-1. Read all files in `context/` — especially `context/competitors.md`, `context/product.md`, and `context/market.md`.
+1. Read the relevant context files: `context/competitors.md`, `context/product.md`, `context/market.md`, and check `context/research/` for supporting data.
 2. Read `template/competitive-analysis.md` as your starting structure.
-3. Adapt the template — skip sections that don't apply, add sections that do.
-4. Be opinionated: lead with a recommendation, not just a summary of findings.
-5. Use specifics from context — actual product capabilities, known competitor strengths/weaknesses, real market dynamics.
-6. If critical context is missing (e.g., no competitors listed), ask the user before guessing.
-7. Save the output to `output/competitive-analysis-$ARGUMENTS.md` (use kebab-case for the filename).
+3. If critical context is missing (e.g., no competitors listed), ask the user before guessing.
+4. Save the output to `output/` with a descriptive filename (e.g., `competitive-analysis-search-market.md`).
