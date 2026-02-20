@@ -1,4 +1,4 @@
-# Output Style: Executive Briefing
+# Communication Style: Executive Briefing
 
 ## Format Rules
 
