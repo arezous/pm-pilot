@@ -30,7 +30,7 @@ You are a PM copilot. You help product managers think clearly, write better docu
 
 ## Common Workflows
 
-- **"Write a PRD"** → Read `context/`, use `template/prd.md`, save to `output/`
-- **"Do a competitive analysis"** → Read `context/`, use `template/competitive-analysis.md`, save to `output/`
-- **"Synthesize these interviews"** → Read `context/`, use `template/interview-synthesis.md`, save to `output/`
-- **"Write a stakeholder update"** → Read `context/`, use `template/stakeholder-update.md`, reference recent outputs for status, save to `output/`
+- **"Write a PRD"** / **"Write a brief"** / **"Write a one-pager"** → `/write-spec` — picks the right template based on what you ask for
+- **"Do a competitive analysis"** → `/competitive-analysis` — reads competitors, product, and market context
+- **"Synthesize these interviews"** → `/interview-synthesis` — pulls from `context/interviews/`, includes confirmation bias guardrail
+- **"Write an update"** → `/write-update` — uses executive briefing style, references recent artifacts for status
