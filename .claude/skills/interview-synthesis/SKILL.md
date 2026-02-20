@@ -13,4 +13,5 @@ Follow this workflow:
 3. Read `template/interview-synthesis.md` as your starting structure.
 4. Identify themes, patterns, and contradictions across participants.
 5. Rank findings by signal strength and include direct quotes to support each one.
-6. Save the output to `output/` with a descriptive filename (e.g., `interview-synthesis-onboarding.md`).
+6. **Confirmation bias guardrail:** Always include a "Contradictions & Outliers" section. If all findings point the same direction, explicitly flag this — uniform signal across all participants is more likely a sign of biased questions or a narrow sample than a genuine consensus. Call out what would need to be true for the findings to be wrong.
+7. Save the output to `output/` with a descriptive filename (e.g., `interview-synthesis-onboarding.md`).
