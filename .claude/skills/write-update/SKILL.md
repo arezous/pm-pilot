@@ -9,7 +9,7 @@ You are an expert at clear, audience-appropriate communication. You help product
 Follow this workflow:
 
 1. Read `context/company.md` and `context/product.md` for grounding.
-2. Check `context/prds/`, `context/decisions/`, and `output/` for recent artifacts related to the project — reference them for status and metrics.
+2. Check `output/` for recent specs and artifacts related to the project — reference them for status and metrics.
 3. Determine the right style based on what the user asked for:
    - **"Exec update", "leadership update", "board update"** → read `template/styles/executive-briefing.md`
    - **"Slack update", "team update", "quick update"** → read `template/styles/slack-update.md`

@@ -1,14 +1,13 @@
 # Competitive Analysis: [Market / Feature Area]
 
-**Author:**
 **Date:**
 **Objective:** What decision will this analysis inform?
 
 ---
 
-## Executive Summary
+## Recommendation
 
-**Recommendation:** State your recommendation upfront. What should we do based on this analysis?
+State your recommendation upfront. What should we do based on this analysis?
 
 Key findings (3-5 bullets):
 
@@ -20,117 +19,84 @@ Key findings (3-5 bullets):
 
 ## Market Landscape
 
-### Market Overview
-
-Brief description of the market, size, trends, and dynamics.
-
-### Our Position
-
-Where do we sit today? What's our differentiation?
+Brief description of the market, size, trends, and dynamics. Where do we sit today?
 
 ---
 
 ## Competitor Profiles
 
-### [Competitor 1]
+Create one section per competitor. Include as many as are relevant.
 
-| Attribute | Details |
-|-----------|---------|
-| **Company** | |
-| **Founded** | |
-| **Funding / Revenue** | |
-| **Target Customer** | |
-| **Positioning** | |
-| **Key Differentiator** | |
+For each competitor:
 
-**What they do well:**
+### [Competitor Name]
 
+**What they do:** One-line description and target customer.
+
+**Stage:** Founded, funding, headcount, revenue if known.
+
+**Strengths:**
 -
 
-**Where they fall short:**
-
+**Weaknesses:**
 -
 
-**Recent moves:**
-
+**Recent moves:** Product launches, acquisitions, pricing changes, leadership shifts in the last 12 months.
 -
 
----
+**Executive perspective:** Real quotes from leadership on strategy, product direction, or market positioning. Cite source and date.
 
-### [Competitor 2]
-
-| Attribute | Details |
-|-----------|---------|
-| **Company** | |
-| **Founded** | |
-| **Funding / Revenue** | |
-| **Target Customer** | |
-| **Positioning** | |
-| **Key Differentiator** | |
-
-**What they do well:**
-
--
-
-**Where they fall short:**
-
--
-
-**Recent moves:**
-
--
+**Our angle:** How we win against them, framed through what our users care about.
 
 ---
 
 ## Feature Comparison
 
-| Feature / Capability | Us | Competitor 1 | Competitor 2 |
-|---------------------|-----|-------------|-------------|
-|                     |     |             |             |
+Compare on dimensions that matter to our personas, not generic checklists.
 
-**Legend:** Full support | Partial | None | Unknown
+| Capability | Us | [Competitor] | [Competitor] |
+|---|---|---|---|
+| | | | |
 
 ---
 
 ## Pricing Comparison
 
-| Plan / Tier | Us | Competitor 1 | Competitor 2 |
-|------------|-----|-------------|-------------|
-| Free       |     |             |             |
-| Mid-tier   |     |             |             |
-| Enterprise |     |             |             |
+| | Us | [Competitor] | [Competitor] |
+|---|---|---|---|
+| Entry point | | | |
+| Mid-tier | | | |
+| Enterprise | | | |
 
 ---
 
 ## Strategic Implications
 
-### Where we're ahead
-
+**Where we're ahead:**
 -
 
-### Where we're behind
-
+**Where we're behind:**
 -
 
-### Gaps to close
-
+**Gaps to close:**
 -
 
-### Opportunities to exploit
-
+**Opportunities to exploit:**
 -
 
 ---
 
 ## Recommended Actions
 
-| Priority | Action | Rationale | Owner | Timeline |
-|----------|--------|-----------|-------|----------|
-| P0       |        |           |       |          |
-| P1       |        |           |       |          |
+| Priority | Action | Rationale |
+|---|---|---|
+| P0 | | |
+| P1 | | |
 
 ---
 
 ## Sources
+
+List every source used. Link to the article, interview, or review.
 
 -
