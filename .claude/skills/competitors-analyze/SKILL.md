@@ -66,7 +66,28 @@ Use when a baseline analysis already exists and you need to catch what changed. 
 
 5. **Flag what matters.** Not every change is relevant. Focus on moves that affect your customers, your positioning, or your roadmap. Skip noise.
 
-6. **Save and offer updates.** Save to `output/competitors/competitive-intel-[YYYY-MM].md`. Offer to update `context/competitors.md` with significant changes.
+6. **Determine the response.** Based on what you found:
+
+   **Nothing changed:** Tell the PM "No significant changes this month." Don't create a report. Don't waste their time with an empty file.
+
+   **Minor changes** (small feature shipped, a few new reviews, blog post): Create the monitoring report in `output/competitors/`. Don't touch `context/competitors.md`. Minor moves don't warrant updating the baseline.
+
+   **Significant changes** (new funding, major feature launch, pricing restructure, new market segment): Create the monitoring report. Show the PM what changed and offer to update `context/competitors.md` with a preview of the edits. Wait for approval before updating. When updating:
+   - Facts that change (CEO, pricing, headcount, funding stage): replace the old value directly. The old fact is obsolete.
+   - Strategic assessments that shift (their positioning, strengths, your angle): keep both with `[Updated: YYYY-MM-DD] Previously X, now Y.` The history of strategic shifts is useful context.
+   - If the last deep dive is older than 3 months, suggest running a fresh deep dive: "Competitor X raised $80M and launched an enterprise tier. The last deep dive is from [date]. Want me to run a fresh one?"
+
+   **Fundamental changes** (competitor acquired, shut down, pivoted to a different market): Create the monitoring report documenting what happened. Move the competitor's section in `context/competitors.md` to an `## Archived` section at the bottom with a one-line note (e.g., "Acquired by X in Feb 2026"). If acquired by another competitor you track, update that competitor's entry instead. Deep dive files in `context/competitors/` stay as-is -- they're point-in-time snapshots.
+
+   **New competitor appears** (customer mentions an unfamiliar name, a company enters your space): Flag it in the monitoring report. Don't add to `context/competitors.md` based on one signal. Suggest a deep dive if the signal is strong (multiple mentions, direct deal loss), otherwise note it under "Watch closely."
+
+7. **Save.** Save to `output/competitors/competitive-intel-[YYYY-MM].md`.
+
+## How files relate
+
+- `context/competitors.md` -- always current summary of all competitors. Updated only when changes are significant enough to affect decisions. Every skill reads this file.
+- `context/competitors/*.md` -- point-in-time deep dives. Never edited after finalization. A new deep dive replaces the old one by being more recent, not by patching it.
+- `output/competitors/competitive-intel-*.md` -- monthly monitoring reports. The changelog between deep dives.
 
 ### Monitoring output format
 
