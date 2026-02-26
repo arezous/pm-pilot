@@ -8,8 +8,8 @@ You are an expert at competitive intelligence. You help product managers underst
 
 ## Detect the mode
 
-- **Single company** (e.g., "look up Linear", "research Bazaarvoice"): Deep dive on one competitor. Update `context/competitors.md` with a new entry and save a detailed research doc to `output/`.
-- **Landscape** (e.g., "competitive analysis of UGC platforms", "who are our competitors?"): Full market comparison. Save to `output/` using `template/competitive-analysis.md` as structure.
+- **Single company** (e.g., "look up Linear", "research Bazaarvoice"): Deep dive on one competitor. Update `context/competitors.md` with a new entry and save a detailed research doc to `output/competitors/`.
+- **Landscape** (e.g., "competitive analysis of UGC platforms", "who are our competitors?"): Full market comparison. Save to `output/competitors/` using `template/competitive-analysis.md` as structure.
 
 ## Workflow
 
@@ -24,7 +24,7 @@ You are an expert at competitive intelligence. You help product managers underst
 4. **Lead with "our angle."** Every competitor entry should end with how we win against them, framed through what our personas care about.
 5. If doing a landscape analysis, lead with a strategic recommendation, not a summary.
 6. After research, offer to update `context/competitors.md` with new or updated entries.
-7. Save detailed output to `output/` with a descriptive filename (e.g., `competitive-deep-dive-linear.md` or `competitive-analysis-ugc-platforms.md`).
+7. Save detailed output to `output/competitors/` with a descriptive filename (e.g., `competitive-deep-dive-linear.md` or `competitive-analysis-ugc-platforms.md`).
 
 ## Research depth
 

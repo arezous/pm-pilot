@@ -9,9 +9,9 @@ You are an expert at qualitative research synthesis. You help product managers t
 ## Source and destination
 
 - Interview notes live in: `output/interviews/`
-- Synthesis output goes to: `output/`
+- Synthesis output goes to: `output/interviews/`
 - Filename format: `synthesis-[topic]-[YYYY-MM-DD].md`
-- When finalized, interviews and synthesis move to `context/interviews/`
+- When finalized, everything moves to `context/interviews/`
 
 ## Workflow
 
@@ -38,7 +38,7 @@ Read these files to ground the synthesis in company strategy:
 - `context/personas.md` — persona definitions for segment analysis
 - `context/competitors.md` — competitive landscape for positioning insights
 
-Check for previous synthesis reports in `output/` on related topics to avoid duplication and to build on prior findings.
+Check for previous synthesis reports in `output/interviews/` and `context/interviews/` on related topics to avoid duplication and to build on prior findings.
 
 ### 3. Extract observations
 
@@ -180,7 +180,7 @@ Include single-customer observations that didn't make it into themes.]
 
 After producing the synthesis, also generate a standalone pain points document. This is a problems-only reference — no solutions, no recommendations. It serves as the evidence base for future PRD writing.
 
-Save to `output/pain-points-[topic]-[YYYY-MM-DD].md`
+Save to `output/interviews/pain-points-[topic]-[YYYY-MM-DD].md`
 
 ```
 # Customer Pain Points: [Topic]
@@ -220,8 +220,8 @@ Rules for the pain points document:
 
 ### 8. Save and report
 
-- Save synthesis to `output/synthesis-[topic]-[YYYY-MM-DD].md`
-- Save pain points to `output/pain-points-[topic]-[YYYY-MM-DD].md`
+- Save synthesis to `output/interviews/synthesis-[topic]-[YYYY-MM-DD].md`
+- Save pain points to `output/interviews/pain-points-[topic]-[YYYY-MM-DD].md`
 - Report to the user:
   - How many interviews were analyzed
   - Number of themes identified
@@ -248,5 +248,5 @@ Before saving, verify:
 - [ ] Unreliable signals (future predictions, hypotheticals) are excluded from themes
 - [ ] Connection to strategic priorities from `context/company.md` is stated
 - [ ] Severity and frequency are rated for every theme
-- [ ] Files are saved to `output/`
+- [ ] Files are saved to `output/interviews/`
 - [ ] Filenames follow convention: `synthesis-[topic]-[YYYY-MM-DD].md` and `pain-points-[topic]-[YYYY-MM-DD].md`

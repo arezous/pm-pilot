@@ -18,9 +18,9 @@ It works in two modes:
 
 ## What you get
 
-A research document saved to `output/` (e.g., `competitive-deep-dive-linear.md` or `competitive-analysis-ugc-platforms.md`). Every claim is cited with a source link. Each competitor entry ends with how you win against them.
+A research document saved to `output/competitors/` (e.g., `competitive-deep-dive-linear.md` or `competitive-analysis-ugc-platforms.md`). Every claim is cited with a source link. Each competitor entry ends with how you win against them.
 
-After research, it will offer to update `context/competitors.md` with new findings.
+After research, it will offer to update `context/competitors.md` (the quick summary) with new findings. Say "finalize this" to move deep dives to `context/competitors/`.
 
 ## Tips
 

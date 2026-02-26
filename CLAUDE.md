@@ -27,10 +27,9 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 **Templates** in `template/` define output formats. Channel-specific styles live in `template/styles/` (e.g., executive-briefing, Slack, Notion). When writing for a specific audience, check for a matching style template.
 
 **Output** goes to `output/`. All work lands here first as drafts. When the user finalizes something ("finalize this", "this is done", "move this to context"), move it to the right `context/` subfolder:
-- Approved specs → `context/prds/` or `context/briefs/`
-- Finalized interview synthesis → `context/interviews/`
-- Research findings → `context/research/`
-- Decision records → `context/decisions/`
+- Approved specs (PRDs, briefs, one-pagers) → `context/specs/`
+- Interview notes and synthesis → `context/interviews/`
+- Competitive deep dives and landscape analyses → `context/competitors/`
 
 Create the subfolder when you move the first file into it. Skills check both `output/` and `context/` subfolders for prior work.
 
@@ -72,12 +71,19 @@ When a PM first opens this workspace:
 
 ## Folder Management
 
-The repo ships lean. Create folders as the work requires them:
-- `context/prds/` — when specs are finalized
-- `context/decisions/` — when decisions are recorded
-- `output/specs/` — draft specs before finalization
-- `output/updates/` — status updates
-- `output/research/` — interview synthesis, research findings
+The repo ships lean. Create folders as the work requires them.
+
+`output/` and `context/` mirror each other. Drafts live in `output/`, finalized work moves to `context/`:
+
+| Draft | Finalized |
+|---|---|
+| `output/specs/` | `context/specs/` |
+| `output/interviews/` | `context/interviews/` |
+| `output/competitors/` | `context/competitors/` |
+
+Updates and other one-off docs save directly to `output/`.
+
+`context/competitors.md` remains the quick summary of all competitors. Deep dives and landscape analyses live in `context/competitors/`.
 
 Never create empty folders preemptively. Let the work create the structure.
 

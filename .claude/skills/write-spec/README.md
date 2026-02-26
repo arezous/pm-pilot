@@ -21,10 +21,10 @@ If context is missing (personas, product details), it will ask you before guessi
 
 ## What you get
 
-A markdown document saved to `output/` with a descriptive name like `prd-search-redesign.md` or `one-pager-dark-mode.md`. It pulls from your context files and checks for existing specs to avoid contradictions.
+A markdown document saved to `output/specs/` with a descriptive name like `prd-search-redesign.md` or `one-pager-dark-mode.md`. It pulls from your context files and checks for existing specs to avoid contradictions.
 
 ## Tips
 
 - For PRDs, it will ask what stage you're at. A kickoff PRD is 300-500 words. A launch-ready PRD is 1500-2000 words.
 - Fill in `context/product.md` and `context/personas.md` first for better results.
-- When you're happy with a spec, say "finalize this" to move it to `context/prds/` or `context/briefs/`.
+- When you're happy with a spec, say "finalize this" to move it to `context/specs/`.

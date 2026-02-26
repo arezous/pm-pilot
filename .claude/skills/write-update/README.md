@@ -19,10 +19,10 @@ You can specify the audience or let it ask. It picks from three styles:
 
 ## What you get
 
-A markdown document saved to `output/` (e.g., `update-search-redesign.md`). It pulls from your context files and any existing specs or decision records for the project.
+A markdown document saved to `output/` (e.g., `update-search-redesign.md`). It pulls from your context files and any existing specs for the project.
 
 ## Tips
 
 - Have current status or metrics ready. It will ask rather than guess.
 - Fill in `context/company.md` and `context/product.md` first for better grounding.
-- It checks `context/prds/`, `context/decisions/`, and `context/briefs/` for related artifacts to reference.
+- It checks `context/specs/` for related artifacts to reference.

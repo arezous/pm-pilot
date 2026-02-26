@@ -20,7 +20,7 @@ You can scope by topic, persona, date range, or include everything.
 
 ## What you get
 
-Two documents saved to `output/`:
+Two documents saved to `output/interviews/`:
 
 1. **Synthesis report** (`synthesis-[topic]-[YYYY-MM-DD].md`) — themes clustered from observations, each with frequency, severity, supporting quotes, Jobs-to-be-Done framing, and a specific recommendation. Includes an executive summary, contradictions section, and research gaps.
 
