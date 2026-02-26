@@ -1,6 +1,6 @@
 # /synthesize-interviews
 
-Turn customer interview notes into actionable themes, prioritized recommendations, and a standalone pain points document for PRD writing.
+Turn customer interview notes into themes, recommendations, and a standalone pain points document.
 
 ## How to use it
 
@@ -22,16 +22,13 @@ You can scope by topic, persona, date range, or include everything.
 
 Two documents saved to `output/interviews/`:
 
-1. **Synthesis report** (`synthesis-[topic]-[YYYY-MM-DD].md`) — themes clustered from observations, each with frequency, severity, supporting quotes, Jobs-to-be-Done framing, and a specific recommendation. Includes an executive summary, contradictions section, and research gaps.
-
-2. **Pain points document** (`pain-points-[topic]-[YYYY-MM-DD].md`) — problems only, no solutions. Serves as the evidence base for future PRD writing.
-
-## Moving to context
-
-Everything starts in `output/`. When you're happy with the results, say "finalize this" or "move this to context" and Claude will move the files to `context/interviews/`. Once there, they become part of the knowledge base that all other skills draw from.
+1. **Synthesis report** (`synthesis-[topic]-[YYYY-MM-DD].md`) — themes with frequency, severity, supporting quotes, Jobs-to-be-Done framing, and specific recommendations.
+2. **Pain points document** (`pain-points-[topic]-[YYYY-MM-DD].md`) — problems only, no solutions. Evidence base for future specs.
 
 ## Tips
 
-- It flags unreliable signals (hypotheticals, future predictions, vague praise) and excludes them from themes.
-- Themes require 2+ customers. Single-customer observations go in the appendix, not the findings.
-- It checks for previous synthesis on the same topic and builds on it rather than duplicating.
+- Flags unreliable signals (hypotheticals, future predictions, vague praise) and excludes them from themes.
+- Themes require 2+ customers. Single-customer observations go in the appendix.
+- Checks for previous synthesis on the same topic and builds on it.
+- Pair with `/write-spec` to turn top themes into feature specs, or `/write-update` for a stakeholder summary.
+- Say "finalize this" to move files to `context/interviews/`.

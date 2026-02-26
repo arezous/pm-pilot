@@ -4,20 +4,36 @@ Your AI-powered copilot for modern product management. Built for Claude Code and
 
 ## Philosophy
 
-Most PMs use AI the same way they use Google: one-off questions, zero context. This system works differently. This is the initial version.
+Most PMs use AI the same way they use Google: one-off questions, zero context. This system works differently. You build context about your company, competitors, personas, and product. Every skill draws from that context so outputs are grounded in your actual world, not generic advice.
 
 ## Project Structure
 
 ```
 pmos-starterkit/
-├── context/       # Project context and background documents
-├── template/      # Reusable templates for PM workflows
-├── setup/         # Environment configuration and setup guides
-└── output/        # Generated artifacts and outputs
+├── context/           # What you know (living documents)
+│   ├── company.md     # Who you are, goals, constraints
+│   ├── competitors.md # Competitive landscape summary
+│   ├── personas.md    # Who you serve, their needs
+│   └── product.md     # What you have, what works
+├── template/          # Output formats and style guides
+├── output/            # Drafts and generated artifacts
+└── setup/             # Environment configuration
 ```
+
+Drafts land in `output/`. When finalized, they move to `context/` subfolders (`context/specs/`, `context/interviews/`, `context/competitors/`).
+
+## Skills
+
+| Command | What it does |
+|---|---|
+| `/write-spec` | Write a PRD, one-pager, or project brief |
+| `/analyze-competitors` | Deep dive on a company or full landscape analysis |
+| `/synthesize-interviews` | Turn interview notes into themes and recommendations |
+| `/write-update` | Status update matched to the audience |
 
 ## Getting Started
 
 1. Clone this repository
-2. Set up your environment keys — see [setup/ENV_KEYS_SETUP.md](setup/ENV_KEYS_SETUP.md)
-3. Add your project context to the `context/` folder
+2. Set up your environment keys (see [setup/ENV_KEYS_SETUP.md](setup/ENV_KEYS_SETUP.md))
+3. Start a conversation and share what you know about your company, product, or market
+4. The system will populate your context files and guide you from there
