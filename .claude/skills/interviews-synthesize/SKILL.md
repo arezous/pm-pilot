@@ -226,7 +226,7 @@ Rules for the pain points document:
   - How many interviews were analyzed
   - Number of themes identified
   - Top 3 insights
-  - Recommended next step: suggest using `/spec-write` to turn top themes into feature specs, or drafting a stakeholder summary with `/status-update`
+  - Recommended next step: suggest using `/prd` to turn top themes into feature specs, or drafting a stakeholder summary with `/status-update`
 
 ## Edge cases
 

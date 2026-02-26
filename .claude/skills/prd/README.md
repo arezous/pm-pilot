@@ -1,14 +1,14 @@
-# /spec-write
+# /prd
 
 Write a PRD, one-pager, or project brief for a feature or initiative.
 
 ## How to use it
 
-Type `/spec-write` followed by what you want to spec out:
+Type `/prd` followed by what you want to spec out:
 
 ```
-/spec-write dark mode
-/spec-write onboarding redesign
+/prd dark mode
+/prd onboarding redesign
 ```
 
 You can ask for a specific format ("write a one-pager for...", "full PRD for...") or let it ask. It picks from three templates based on scope:

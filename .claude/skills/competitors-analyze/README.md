@@ -27,4 +27,4 @@ After research, it offers to update `context/competitors.md` with new findings. 
 - Goes beyond marketing pages: G2 reviews, exec interviews, job postings, changelogs, earnings calls.
 - Landscape analyses lead with a strategic recommendation, not a summary.
 - Fill in `context/product.md` and `context/personas.md` first so the "our angle" framing is grounded.
-- Pair with `/spec-write` to turn competitive insights into feature specs.
+- Pair with `/prd` to turn competitive insights into feature specs.

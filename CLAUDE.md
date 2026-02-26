@@ -19,7 +19,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - **personas.md** — One section per persona: who they are, their goal, their pains with signal strength and a real quote (e.g., "Onboarding takes too long (5/10) — 'I spent 20 minutes just connecting my store'")
 
 **Skills** help the PM work:
-- `/spec-write` — produces PRDs, briefs, and one-pagers grounded in context
+- `/prd` — produces PRDs, briefs, and one-pagers grounded in context
 - `/competitors-analyze` — runs a competitive analysis for a market or feature area
 - `/interviews-synthesize` — processes interview transcripts into structured insights
 - `/status-update` — creates stakeholder communications, matches style to audience

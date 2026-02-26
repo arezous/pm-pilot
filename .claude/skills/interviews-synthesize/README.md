@@ -30,5 +30,5 @@ Two documents saved to `output/interviews/`:
 - Flags unreliable signals (hypotheticals, future predictions, vague praise) and excludes them from themes.
 - Themes require 2+ customers. Single-customer observations go in the appendix.
 - Checks for previous synthesis on the same topic and builds on it.
-- Pair with `/spec-write` to turn top themes into feature specs, or `/status-update` for a stakeholder summary.
+- Pair with `/prd` to turn top themes into feature specs, or `/status-update` for a stakeholder summary.
 - Say "finalize this" to move files to `context/interviews/`.
