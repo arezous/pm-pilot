@@ -16,7 +16,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - **company.md** — What We Do (who you are, who it's for, core problem), Stage & Size, Current Priorities (top 2-3), Constraints (budget, headcount, tech debt, timeline)
 - **product.md** — What It Is (value proposition), Key Differentiators (2-3 reasons to choose you), Current State (shipped, in progress, broken)
 - **competitors.md** — One section per competitor: what they do, strengths, weaknesses, our angle against them
-- **personas.md** — One section per persona: who they are, their goal, their pain, a quote in their voice
+- **personas.md** — One section per persona: who they are, their goal, their pains with signal strength and a real quote (e.g., "Onboarding takes too long (5/10) — 'I spent 20 minutes just connecting my store'")
 
 **Skills** help the PM work:
 - `/write-spec` — produces PRDs, briefs, and one-pagers grounded in context
@@ -26,7 +26,13 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 
 **Templates** in `template/` define output formats. Channel-specific styles live in `template/styles/` (e.g., executive-briefing, Slack, Notion). When writing for a specific audience, check for a matching style template.
 
-**Output** goes to `output/`. All specs, updates, and other deliverables land here first. Organize by type (e.g., `output/specs/`, `output/updates/`). Create subfolders as needed.
+**Output** goes to `output/`. All work lands here first as drafts. When the user finalizes something ("finalize this", "this is done", "move this to context"), move it to the right `context/` subfolder:
+- Approved specs → `context/prds/` or `context/briefs/`
+- Finalized interview synthesis → `context/interviews/`
+- Research findings → `context/research/`
+- Decision records → `context/decisions/`
+
+Create the subfolder when you move the first file into it. Skills check both `output/` and `context/` subfolders for prior work.
 
 ## Core Principles
 
@@ -67,10 +73,11 @@ When a PM first opens this workspace:
 ## Folder Management
 
 The repo ships lean. Create folders as the work requires them:
-- `context/interviews/` — when interview transcripts are processed
-- `context/research/` — when research is conducted
-- `output/specs/` — when specs are written
-- `output/updates/` — when status updates are created
+- `context/prds/` — when specs are finalized
+- `context/decisions/` — when decisions are recorded
+- `output/specs/` — draft specs before finalization
+- `output/updates/` — status updates
+- `output/research/` — interview synthesis, research findings
 
 Never create empty folders preemptively. Let the work create the structure.
 
