@@ -1,15 +1,15 @@
-# /interview-synthesis
+# /synthesize-interviews
 
 Turn customer interview notes into actionable themes, prioritized recommendations, and a standalone pain points document for PRD writing.
 
 ## How to use it
 
-Type `/interview-synthesis` followed by the topic area:
+Type `/synthesize-interviews` followed by the topic area:
 
 ```
-/interview-synthesis onboarding
-/interview-synthesis checkout flow
-/interview-synthesis all
+/synthesize-interviews onboarding
+/synthesize-interviews checkout flow
+/synthesize-interviews all
 ```
 
 Provide interview notes in one of two ways:

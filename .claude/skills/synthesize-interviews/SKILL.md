@@ -1,5 +1,5 @@
 ---
-name: interview-synthesis
+name: synthesize-interviews
 description: Synthesize customer interview notes into themes, findings, and recommendations.
 argument-hint: [topic]
 ---

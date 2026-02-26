@@ -20,8 +20,8 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 
 **Skills** help the PM work:
 - `/write-spec` — produces PRDs, briefs, and one-pagers grounded in context
-- `/competitive-analysis` — runs a competitive analysis for a market or feature area
-- `/interview-synthesis` — processes interview transcripts into structured insights
+- `/analyze-competitors` — runs a competitive analysis for a market or feature area
+- `/synthesize-interviews` — processes interview transcripts into structured insights
 - `/write-update` — creates stakeholder communications, matches style to audience
 
 **Templates** in `template/` define output formats. Channel-specific styles live in `template/styles/` (e.g., executive-briefing, Slack, Notion). When writing for a specific audience, check for a matching style template.

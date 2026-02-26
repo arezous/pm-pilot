@@ -1,14 +1,14 @@
-# /competitive-analysis
+# /analyze-competitors
 
 Research competitors, either a deep dive on one company or a full landscape analysis of a market area.
 
 ## How to use it
 
-Type `/competitive-analysis` followed by a company name or market area:
+Type `/analyze-competitors` followed by a company name or market area:
 
 ```
-/competitive-analysis Linear
-/competitive-analysis UGC platforms
+/analyze-competitors Linear
+/analyze-competitors UGC platforms
 ```
 
 It works in two modes:
