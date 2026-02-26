@@ -6,54 +6,56 @@
 
 ---
 
+## Description
+
+What is it? Describe the project in 2-3 sentences. A teammate who knows nothing about this should understand what you're proposing.
+
+---
+
 ## Problem
 
-What's the problem? Who has it? Why does it matter now?
+What problem is this solving? Who has this problem? Be specific with data and quotes where possible.
 
 ---
 
-## Proposal
+## Why
 
-What are we doing about it? Describe the solution in 2-3 sentences.
-
----
-
-## Why Now
-
-What changed that makes this urgent or timely?
+How do we know this is a real problem and worth solving? What evidence do we have (user research, data, support tickets, business impact)? Why now and not later?
 
 ---
 
-## Key Outcomes
+## Success
 
-What does success look like? Be specific.
+How do we know if we've solved this problem? Be specific.
 
-| Outcome | Metric | Target |
-|---------|--------|--------|
-|         |        |        |
-
----
-
-## Scope
-
-**In scope:**
-
--
-
-**Out of scope:**
-
--
+| Metric | Current | Target |
+|--------|---------|--------|
+|        |         |        |
 
 ---
 
-## Risks
+## Audience
 
-| Risk | Mitigation |
-|------|------------|
-|      |            |
+Who are we building this for? Primary and secondary audiences. What do we know about them?
 
 ---
 
-## Ask
+## What
 
-What do you need from the reader? A decision, resources, alignment?
+Roughly, what does this look like in the product? High-level solution shape, not detailed specs. Mockups or wireframes if available.
+
+---
+
+## How
+
+What is the experiment plan? How do we de-risk this? Consider: phased rollout, A/B test, dogfooding, beta group, etc.
+
+---
+
+## When
+
+When does it ship and what are the milestones?
+
+| Milestone | Date |
+|-----------|------|
+|           |      |
