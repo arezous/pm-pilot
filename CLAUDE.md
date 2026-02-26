@@ -22,6 +22,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - `/prd` — produces PRDs, briefs, and one-pagers grounded in context
 - `/competitors-analyze` — runs a competitive analysis for a market or feature area
 - `/interviews-synthesize` — processes interview transcripts into structured insights
+- `/meeting-notes` — transforms meeting transcripts into structured decisions, action items, and insights
 - `/status-update` — creates stakeholder communications, matches style to audience
 
 **Templates** in `template/` define output formats. Channel-specific styles live in `template/styles/` (e.g., executive-briefing, Slack, Notion). When writing for a specific audience, check for a matching style template.
@@ -80,6 +81,7 @@ The repo ships lean. Create folders as the work requires them.
 | `output/specs/` | `context/specs/` |
 | `output/interviews/` | `context/interviews/` |
 | `output/competitors/` | `context/competitors/` |
+| `output/meetings/` | `context/meetings/` |
 
 Updates and other one-off docs save directly to `output/`.
 
