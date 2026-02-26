@@ -37,7 +37,7 @@ Before processing, check what's relevant:
 4. Check `context/personas.md` if it's a customer interview.
 
 Ask the user:
-- **What kind of meeting was this?** Customer interview, stakeholder review, team planning, 1:1, design review, engineering sync, or other.
+- **What kind of meeting was this?** Customer interview, stakeholder review, planning, 1:1, design review, standup, sync, or other.
 - **Who was there?** Names help assign action items correctly.
 - If the user already provided this info or it's obvious from the transcript, skip asking.
 
@@ -67,11 +67,23 @@ Extract these categories from the raw content:
 - Note political dynamics or objections
 - Flag approvals needed
 
-**Team planning / engineering sync:**
+**Planning:**
 - Focus on action items and ownership
 - Include estimated effort or complexity if mentioned
 - Note dependencies between tasks
 - Track commitments made
+
+**Standup:**
+- Keep it short. Summary + action items only.
+- Flag blockers prominently
+- Note items that carried over from previous standup
+- Skip decisions section if no decisions were made
+
+**Sync:**
+- Focus on status updates and alignment
+- Note what each person reported
+- Track cross-team dependencies
+- Flag misalignments or conflicting priorities
 
 **1:1 with manager:**
 - Include "Feedback Received" section

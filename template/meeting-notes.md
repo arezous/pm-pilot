@@ -2,7 +2,7 @@
 
 **Date:**
 **Attendees:**
-**Type:** Customer interview | Stakeholder review | Team planning | 1:1 | Design review | Engineering sync
+**Type:** Customer interview | Stakeholder review | Planning | 1:1 | Design review | Standup | Sync
 **Duration:**
 
 ---
