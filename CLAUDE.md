@@ -19,10 +19,10 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - **personas.md** — One section per persona: who they are, their goal, their pains with signal strength and a real quote (e.g., "Onboarding takes too long (5/10) — 'I spent 20 minutes just connecting my store'")
 
 **Skills** help the PM work:
-- `/write-spec` — produces PRDs, briefs, and one-pagers grounded in context
-- `/analyze-competitors` — runs a competitive analysis for a market or feature area
-- `/synthesize-interviews` — processes interview transcripts into structured insights
-- `/write-update` — creates stakeholder communications, matches style to audience
+- `/spec-write` — produces PRDs, briefs, and one-pagers grounded in context
+- `/competitors-analyze` — runs a competitive analysis for a market or feature area
+- `/interviews-synthesize` — processes interview transcripts into structured insights
+- `/status-update` — creates stakeholder communications, matches style to audience
 
 **Templates** in `template/` define output formats. Channel-specific styles live in `template/styles/` (e.g., executive-briefing, Slack, Notion). When writing for a specific audience, check for a matching style template.
 

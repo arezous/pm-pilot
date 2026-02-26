@@ -1,5 +1,5 @@
 ---
-name: synthesize-interviews
+name: interviews-synthesize
 description: Synthesize customer interview notes into themes, findings, and recommendations.
 argument-hint: [topic]
 ---
@@ -226,7 +226,7 @@ Rules for the pain points document:
   - How many interviews were analyzed
   - Number of themes identified
   - Top 3 insights
-  - Recommended next step: suggest using `/write-spec` to turn top themes into feature specs, or drafting a stakeholder summary with `/write-update`
+  - Recommended next step: suggest using `/spec-write` to turn top themes into feature specs, or drafting a stakeholder summary with `/status-update`
 
 ## Edge cases
 

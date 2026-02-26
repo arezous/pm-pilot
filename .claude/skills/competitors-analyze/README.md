@@ -1,14 +1,14 @@
-# /analyze-competitors
+# /competitors-analyze
 
 Research competitors, either a deep dive on one company or a full landscape analysis of a market area.
 
 ## How to use it
 
-Type `/analyze-competitors` followed by a company name or market area:
+Type `/competitors-analyze` followed by a company name or market area:
 
 ```
-/analyze-competitors Linear
-/analyze-competitors UGC platforms
+/competitors-analyze Linear
+/competitors-analyze UGC platforms
 ```
 
 It works in two modes:
@@ -27,4 +27,4 @@ After research, it offers to update `context/competitors.md` with new findings. 
 - Goes beyond marketing pages: G2 reviews, exec interviews, job postings, changelogs, earnings calls.
 - Landscape analyses lead with a strategic recommendation, not a summary.
 - Fill in `context/product.md` and `context/personas.md` first so the "our angle" framing is grounded.
-- Pair with `/write-spec` to turn competitive insights into feature specs.
+- Pair with `/spec-write` to turn competitive insights into feature specs.

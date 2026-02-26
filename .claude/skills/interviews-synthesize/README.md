@@ -1,15 +1,15 @@
-# /synthesize-interviews
+# /interviews-synthesize
 
 Turn customer interview notes into themes, recommendations, and a standalone pain points document.
 
 ## How to use it
 
-Type `/synthesize-interviews` followed by the topic area:
+Type `/interviews-synthesize` followed by the topic area:
 
 ```
-/synthesize-interviews onboarding
-/synthesize-interviews checkout flow
-/synthesize-interviews all
+/interviews-synthesize onboarding
+/interviews-synthesize checkout flow
+/interviews-synthesize all
 ```
 
 Provide interview notes in one of two ways:
@@ -30,5 +30,5 @@ Two documents saved to `output/interviews/`:
 - Flags unreliable signals (hypotheticals, future predictions, vague praise) and excludes them from themes.
 - Themes require 2+ customers. Single-customer observations go in the appendix.
 - Checks for previous synthesis on the same topic and builds on it.
-- Pair with `/write-spec` to turn top themes into feature specs, or `/write-update` for a stakeholder summary.
+- Pair with `/spec-write` to turn top themes into feature specs, or `/status-update` for a stakeholder summary.
 - Say "finalize this" to move files to `context/interviews/`.

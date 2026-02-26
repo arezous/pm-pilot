@@ -1,5 +1,5 @@
 ---
-name: write-spec
+name: spec-write
 description: Write a PRD, feature spec, one-pager, or project brief based on what the user asks for.
 argument-hint: [feature-or-initiative]
 ---

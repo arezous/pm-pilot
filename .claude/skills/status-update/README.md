@@ -1,14 +1,14 @@
-# /write-update
+# /status-update
 
 Write a status update for a project or initiative, matched to the right audience and format.
 
 ## How to use it
 
-Type `/write-update` followed by the project name:
+Type `/status-update` followed by the project name:
 
 ```
-/write-update search redesign
-/write-update Q1 roadmap
+/status-update search redesign
+/status-update Q1 roadmap
 ```
 
 You can specify the audience or let it ask. It picks from three styles:
@@ -26,4 +26,4 @@ A markdown document saved to `output/` (e.g., `update-search-redesign.md`). It p
 - Have current status or metrics ready. It asks rather than guesses.
 - Fill in `context/company.md` and `context/product.md` first for better grounding.
 - Checks `context/specs/` for related artifacts to reference.
-- Pair with `/synthesize-interviews` to include user research findings in updates.
+- Pair with `/interviews-synthesize` to include user research findings in updates.

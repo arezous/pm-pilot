@@ -1,14 +1,14 @@
-# /write-spec
+# /spec-write
 
 Write a PRD, one-pager, or project brief for a feature or initiative.
 
 ## How to use it
 
-Type `/write-spec` followed by what you want to spec out:
+Type `/spec-write` followed by what you want to spec out:
 
 ```
-/write-spec dark mode
-/write-spec onboarding redesign
+/spec-write dark mode
+/spec-write onboarding redesign
 ```
 
 You can ask for a specific format ("write a one-pager for...", "full PRD for...") or let it ask. It picks from three templates based on scope:
@@ -25,5 +25,5 @@ A markdown document saved to `output/specs/` (e.g., `prd-search-redesign.md`, `o
 
 - For PRDs, it asks what stage you're at. A kickoff PRD is 300-500 words. A launch-ready PRD is 1500-2000 words.
 - Fill in `context/product.md` and `context/personas.md` first for better results.
-- Pair with `/synthesize-interviews` to ground specs in real user evidence.
+- Pair with `/interviews-synthesize` to ground specs in real user evidence.
 - Say "finalize this" to move a spec to `context/specs/`.

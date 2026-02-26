@@ -1,5 +1,5 @@
 ---
-name: analyze-competitors
+name: competitors-analyze
 description: Run a competitive analysis, either a full landscape or a deep dive on a single company.
 argument-hint: [company-name or market-area]
 ---

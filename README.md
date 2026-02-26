@@ -26,10 +26,10 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (`c
 
 | Command | What it does |
 |---|---|
-| `/write-spec` | Write a PRD, one-pager, or project brief |
-| `/analyze-competitors` | Deep dive on a company or full landscape analysis |
-| `/synthesize-interviews` | Turn interview notes into themes and recommendations |
-| `/write-update` | Status update matched to the audience |
+| `/spec-write` | Write a PRD, one-pager, or project brief |
+| `/competitors-analyze` | Deep dive on a company or full landscape analysis |
+| `/interviews-synthesize` | Turn interview notes into themes and recommendations |
+| `/status-update` | Status update matched to the audience |
 
 ## Getting Started
 

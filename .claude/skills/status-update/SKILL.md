@@ -1,5 +1,5 @@
 ---
-name: write-update
+name: status-update
 description: Write a status update for a project or initiative. Matches the style to the audience.
 argument-hint: [project-name]
 ---
