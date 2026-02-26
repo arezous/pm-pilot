@@ -8,7 +8,7 @@ You are an expert at writing product requirements documents (PRDs) and feature s
 
 ## Follow this workflow:
 
-1. **Determine the depth.** Read `template/one-pager.md` as the base structure. Every spec starts from this skeleton. Then scale up based on what the PM asked for:
+1. **Determine the depth.** Read `template/prd.md` as the base structure. Every spec starts from this skeleton. Then scale up based on what the PM asked for:
 
    - **One-pager** ("quick spec", "small feature", "one-pager"): Use the template as-is. 200-400 words. Enough to align on whether to pursue this.
    - **Brief** ("project brief", "brief"): Start from the template, add: scope and constraints (in/out of scope), stakeholders table, open questions. 400-800 words. Enough to kick off a project.
