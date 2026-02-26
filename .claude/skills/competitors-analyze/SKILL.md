@@ -17,7 +17,7 @@ You are an expert at competitive intelligence. You help product managers underst
 1. **Start with internal intel.** Before any web search, check what you already know. Search these locations for the competitor name (or related terms like "switched to", "lost deal", "chose", "vs"):
    - `context/interviews/` and `output/interviews/` -- customer quotes comparing you to competitors, reasons for switching, feature gaps mentioned
    - `context/meetings/` and `output/meetings/` -- sales losses, CS feedback, win/loss patterns, deal notes
-   - `context/specs/` and `output/specs/` -- positioning decisions, features built in response to competitors
+   - `context/prd/` and `output/prd/` -- positioning decisions, features built in response to competitors
    - `context/competitors/` -- previous deep dives or landscape analyses on this competitor
    - `context/competitors.md`, `context/product.md`, and `context/personas.md` -- existing summaries
 

@@ -8,7 +8,7 @@ You are an expert at writing product requirements documents (PRDs) and feature s
 
 ## Follow this workflow:
 
-1. **Determine the depth.** Read `template/prd.md` as the base structure. Every spec starts from this skeleton. Then scale up based on what the PM asked for:
+1. **Determine the depth.** Read `template/one-pager.md` as the base structure. Every spec starts from this skeleton. Then scale up based on what the PM asked for:
 
    - **One-pager** ("quick spec", "small feature", "one-pager"): Use the template as-is. 200-400 words. Enough to align on whether to pursue this.
    - **Brief** ("project brief", "brief"): Start from the template, add: scope and constraints (in/out of scope), stakeholders table, open questions. 400-800 words. Enough to kick off a project.
@@ -17,6 +17,6 @@ You are an expert at writing product requirements documents (PRDs) and feature s
    If the phrasing doesn't clearly match a depth, ask the user which fits.
 
 2. **Read the relevant context files** -- not all of them, just the ones that matter for this feature (e.g., a search PRD needs `product.md` and `personas.md`, not necessarily `competitors.md`).
-3. **Check `output/specs/` and `context/specs/`** (if they exist) for existing specs -- avoid duplicating or contradicting prior work.
+3. **Check `output/prd/` and `context/prd/`** (if they exist) for existing specs -- avoid duplicating or contradicting prior work.
 4. If critical context is missing, **ask the user before guessing.**
-5. **Save the output** to `output/specs/` with a descriptive filename (e.g., `prd-search-redesign.md`, `brief-onboarding-v2.md`, `one-pager-dark-mode.md`).
+5. **Save the output** to `output/prd/` with a descriptive filename (e.g., `prd-search-redesign.md`, `brief-onboarding-v2.md`, `one-pager-dark-mode.md`).

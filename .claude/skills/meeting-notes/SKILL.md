@@ -31,7 +31,7 @@ Before processing, check what's relevant:
 
 1. Read `context/company.md` and `context/product.md` for grounding.
 2. Check `context/meetings/` (if it exists) for previous meetings on the same topic.
-3. Check `context/specs/` and `output/specs/` for related PRDs or feature context.
+3. Check `context/prd/` and `output/prd/` for related PRDs or feature context.
 4. Check `context/personas.md` if it's a customer interview.
 
 Ask the user:
@@ -92,7 +92,7 @@ Before presenting the notes, verify:
 - [ ] Key quotes are verbatim from the transcript, not paraphrased
 - [ ] Open questions have an owner assigned to resolve them
 
-**Timeline conflict detection:** Compare deadlines mentioned in the meeting against known dates from PRDs in `context/specs/` and previous meetings in `context/meetings/`. If conflicts exist, add a "Timeline Risks" section:
+**Timeline conflict detection:** Compare deadlines mentioned in the meeting against known dates from PRDs in `context/prd/` and previous meetings in `context/meetings/`. If conflicts exist, add a "Timeline Risks" section:
 
 ```
 ## Timeline Risks

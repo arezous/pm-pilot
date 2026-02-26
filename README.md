@@ -15,7 +15,7 @@ pmos-starterkit/
 │   ├── competitors.md # Competitive landscape summary
 │   ├── personas.md    # Who you serve, their needs
 │   ├── product.md     # What you have, what works
-│   ├── specs/         # Finalized PRDs, briefs, one-pagers
+│   ├── prd/           # Finalized PRDs, briefs, one-pagers
 │   ├── interviews/    # Finalized synthesis and pain points
 │   ├── competitors/   # Finalized deep dives and landscapes
 │   └── meetings/      # Finalized meeting notes
@@ -24,7 +24,7 @@ pmos-starterkit/
 └── setup/             # Environment configuration
 ```
 
-Drafts land in `output/`. When finalized, they move to `context/` subfolders (`context/specs/`, `context/interviews/`, `context/competitors/`, `context/meetings/`).
+Drafts land in `output/`. When finalized, they move to `context/` subfolders (`context/prd/`, `context/interviews/`, `context/competitors/`, `context/meetings/`).
 
 ## Skills
 

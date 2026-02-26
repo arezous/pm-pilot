@@ -28,7 +28,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 **Templates** in `template/` define output formats. Channel-specific styles live in `template/styles/` (e.g., executive-briefing, Slack, Notion). When writing for a specific audience, check for a matching style template.
 
 **Output** goes to `output/`. All work lands here first as drafts. When the user finalizes something ("finalize this", "this is done", "move this to context"), move it to the right `context/` subfolder:
-- Approved specs (PRDs, briefs, one-pagers) → `context/specs/`
+- Approved specs (PRDs, briefs, one-pagers) → `context/prd/`
 - Interview notes and synthesis → `context/interviews/`
 - Competitive deep dives and landscape analyses → `context/competitors/`
 
@@ -78,7 +78,7 @@ The repo ships lean. Create folders as the work requires them.
 
 | Draft | Finalized |
 |---|---|
-| `output/specs/` | `context/specs/` |
+| `output/prd/` | `context/prd/` |
 | `output/interviews/` | `context/interviews/` |
 | `output/competitors/` | `context/competitors/` |
 | `output/meetings/` | `context/meetings/` |
