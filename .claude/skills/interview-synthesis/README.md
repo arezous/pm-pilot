@@ -1,6 +1,6 @@
 # /interview-synthesis
 
-Turn raw customer interview notes into structured themes, findings, and recommendations.
+Turn customer interview notes into actionable themes, prioritized recommendations, and a standalone pain points document for PRD writing.
 
 ## How to use it
 
@@ -9,23 +9,26 @@ Type `/interview-synthesis` followed by the topic area:
 ```
 /interview-synthesis onboarding
 /interview-synthesis checkout flow
+/interview-synthesis all
 ```
 
 Provide interview notes in one of two ways:
-- Place transcripts in `context/interviews/` before running
+- Place them in `output/interviews/` before running
 - Paste notes directly into the conversation when prompted
+
+You can scope by topic, persona, date range, or include everything.
 
 ## What you get
 
-A synthesis document saved to `output/` (e.g., `interview-synthesis-onboarding.md`). It includes:
+Two documents saved to `output/`:
 
-- Themes and patterns across participants
-- Signal strength labels (pattern = 3+ mentions, anecdote = 1-2)
-- Direct quotes supporting each finding
-- A "Contradictions & Outliers" section flagging where findings might be wrong
+1. **Synthesis report** (`synthesis-[topic]-[YYYY-MM-DD].md`) — themes clustered from observations, each with frequency, severity, supporting quotes, Jobs-to-be-Done framing, and a specific recommendation. Includes an executive summary, contradictions section, and research gaps.
+
+2. **Pain points document** (`pain-points-[topic]-[YYYY-MM-DD].md`) — problems only, no solutions. Serves as the evidence base for future PRD writing.
 
 ## Tips
 
-- The skill explicitly flags confirmation bias. If all findings point one direction, it will call that out.
-- Fill in `context/personas.md` first so findings can be mapped to real user segments.
-- When you're happy with a synthesis, say "finalize this" to move it to `context/interviews/`.
+- It flags unreliable signals (hypotheticals, future predictions, vague praise) and excludes them from themes.
+- Themes require 2+ customers. Single-customer observations go in the appendix, not the findings.
+- It checks for previous synthesis on the same topic and builds on it rather than duplicating.
+- When you're happy with a synthesis, say "finalize this" to move it to `context/research/`.
