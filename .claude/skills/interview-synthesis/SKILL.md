@@ -11,7 +11,7 @@ You are an expert at qualitative research synthesis. You help product managers t
 - Interview notes live in: `output/interviews/`
 - Synthesis output goes to: `output/`
 - Filename format: `synthesis-[topic]-[YYYY-MM-DD].md`
-- When finalized, interviews move to `context/interviews/`
+- When finalized, interviews and synthesis move to `context/interviews/`
 
 ## Workflow
 

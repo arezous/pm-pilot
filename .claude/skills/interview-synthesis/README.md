@@ -26,9 +26,12 @@ Two documents saved to `output/`:
 
 2. **Pain points document** (`pain-points-[topic]-[YYYY-MM-DD].md`) — problems only, no solutions. Serves as the evidence base for future PRD writing.
 
+## Moving to context
+
+Everything starts in `output/`. When you're happy with the results, say "finalize this" or "move this to context" and Claude will move the files to `context/interviews/`. Once there, they become part of the knowledge base that all other skills draw from.
+
 ## Tips
 
 - It flags unreliable signals (hypotheticals, future predictions, vague praise) and excludes them from themes.
 - Themes require 2+ customers. Single-customer observations go in the appendix, not the findings.
 - It checks for previous synthesis on the same topic and builds on it rather than duplicating.
-- When you're happy with a synthesis, say "finalize this" to move it to `context/research/`.
