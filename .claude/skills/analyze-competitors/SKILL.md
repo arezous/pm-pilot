@@ -1,22 +1,33 @@
 ---
-name: competitors-analyze
+name: analyze-competitors
 description: Run a competitive analysis, either a full landscape or a deep dive on a single company.
 argument-hint: [company-name or market-area]
 ---
 
 You are an expert at competitive intelligence. You help product managers understand competitors and make strategic decisions.
 
+## Source and destination
+
+- Input: internal intel (interviews, meetings, PRDs), web search, PM knowledge
+- Output goes to: `output/competitors/`
+- Summary updates go to: `context/competitors.md`
+- When finalized, detailed reports move to `context/competitors/`
+
 ## Detect the mode
 
-- **Deep dive** (e.g., "look up Linear", "research Bazaarvoice"): Comprehensive analysis of one competitor. Update `context/competitors.md` with a new entry and save a detailed research doc to `output/competitors/`.
+- **Deep dive** (e.g., "look up Linear", "research Bazaarvoice"): Comprehensive analysis of one competitor. Save a detailed research doc to `output/competitors/` and offer to update `context/competitors.md`.
 - **Landscape** (e.g., "competitive analysis of UGC platforms", "who are our competitors?"): Full market comparison. Save to `output/competitors/`.
 - **Monitoring** (e.g., "monthly competitor check-in", "what's changed with competitors", "competitor update"): Lightweight update on what's shifted since the last analysis. Use this for regular check-ins, not first-time research. See the Monitoring workflow below.
 
 ## Deep dive / Landscape workflow
 
+Read the matching template before producing output:
+- Deep dive: `template/competitive-deep-dive.md`
+- Landscape: `template/competitive-landscape.md`
+
 1. **Start with internal intel.** Before any web search, check what you already know. Search these locations for the competitor name (or related terms like "switched to", "lost deal", "chose", "vs"):
-   - `context/interviews/` and `output/interviews/` -- customer quotes comparing you to competitors, reasons for switching, feature gaps mentioned
-   - `context/meetings/` and `output/meetings/` -- sales losses, CS feedback, win/loss patterns, deal notes
+   - `data/interviews/`, `context/interviews/`, and `output/interviews/` -- customer quotes comparing you to competitors, reasons for switching, feature gaps mentioned
+   - `data/meetings/`, `context/meetings/`, and `output/meetings/` -- sales losses, CS feedback, win/loss patterns, deal notes
    - `context/prd/` and `output/prd/` -- positioning decisions, features built in response to competitors
    - `context/competitors/` -- previous deep dives or landscape analyses on this competitor
    - `context/competitors.md`, `context/product.md`, and `context/personas.md` -- existing summaries
@@ -29,11 +40,14 @@ You are an expert at competitive intelligence. You help product managers underst
    - Executive quotes on strategy and vision (interviews, podcasts, blog posts, earnings calls)
    - Funding, acquisitions, headcount changes
    - Weaknesses (user reviews on G2/Capterra, complaints, churn signals)
-3. **Cite everything.** Every claim needs a source. Link to the article, interview, or review. No unsourced assertions.
-4. **Lead with "our angle."** Every competitor entry should end with how we win against them, framed through what our personas care about.
-5. If doing a landscape analysis, lead with a strategic recommendation, not a summary.
-6. After research, offer to update `context/competitors.md` with new or updated entries.
-7. Save detailed output to `output/competitors/` with a descriptive filename (e.g., `competitive-deep-dive-linear.md` or `competitive-analysis-ugc-platforms.md`).
+3. After research, offer to update `context/competitors.md` with new or updated entries.
+4. Save detailed output to `output/competitors/` with a descriptive filename (e.g., `competitive-deep-dive-linear-2026-03-12.md` or `competitive-landscape-ugc-platforms-2026-03-12.md`). Include `**Status:** Draft` in the doc header.
+
+## Quality rules
+
+- **Cite everything.** Every claim needs a source. Link to the article, interview, or review. No unsourced assertions.
+- **Lead with "our angle."** Every competitor entry should end with how we win against them, framed through what our personas care about.
+- **Landscape: lead with a strategic recommendation,** not a summary.
 
 ## Research depth
 
@@ -53,7 +67,10 @@ Use when a baseline analysis already exists and you need to catch what changed. 
 
 1. **Find the baseline.** Check `context/competitors/` and `output/competitors/` for the most recent deep dive or monitoring report. If none exists, tell the PM and suggest a deep dive first.
 
-2. **Check internal intel since last report.** Search `context/interviews/`, `context/meetings/`, `output/interviews/`, and `output/meetings/` for new competitor mentions added after the last report date. Look for new sales losses, customer quotes, or feature requests citing competitors.
+2. **Check internal intel since last report.** Search for new competitor mentions added after the last report date. Look for new sales losses, customer quotes, or feature requests citing competitors.
+   - `data/interviews/` and `data/meetings/` -- raw transcripts
+   - `context/interviews/` and `context/meetings/` -- finalized notes
+   - `output/interviews/` and `output/meetings/` -- draft synthesis and notes
 
 3. **Scan external changes.** This is the core of monitoring. For each tracked competitor, search for:
    - Blog posts and changelog entries from the last 30 days

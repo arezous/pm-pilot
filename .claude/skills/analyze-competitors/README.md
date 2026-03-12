@@ -1,15 +1,15 @@
-# /competitors-analyze
+# /analyze-competitors
 
 Research competitors, either a deep dive on one company, a full landscape analysis, or a monthly monitoring check-in.
 
 ## How to use it
 
-Type `/competitors-analyze` followed by a company name, market area, or check-in request:
+Type `/analyze-competitors` followed by a company name, market area, or check-in request:
 
 ```
-/competitors-analyze Linear
-/competitors-analyze UGC platforms
-/competitors-analyze monthly check-in
+/analyze-competitors Linear
+/analyze-competitors UGC platforms
+/analyze-competitors monthly check-in
 ```
 
 It works in three modes:

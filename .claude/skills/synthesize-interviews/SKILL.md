@@ -1,5 +1,5 @@
 ---
-name: interviews-synthesize
+name: synthesize-interviews
 description: Synthesize customer interview notes into themes, findings, and recommendations.
 argument-hint: [topic]
 ---
@@ -8,10 +8,10 @@ You are an expert at qualitative research synthesis. You help product managers t
 
 ## Source and destination
 
-- Interview notes live in: `output/interviews/`
+- Raw input (transcripts, notes, voice memos) lives in: `data/interviews/`
 - Synthesis output goes to: `output/interviews/`
 - Filename format: `synthesis-[topic]-[YYYY-MM-DD].md`
-- When finalized, everything moves to `context/interviews/`
+- When finalized, output moves to `context/interviews/`
 
 ## Workflow
 
@@ -19,11 +19,11 @@ You are an expert at qualitative research synthesis. You help product managers t
 
 Figure out which interviews to include:
 
-- If the user specifies a topic (e.g., "FitProfile abandonment"), grep across all interview files for relevant content and select matching files.
+- If the user specifies a topic (e.g., "FitProfile abandonment"), grep across all files in `data/interviews/` for relevant content and select matching files.
 - If the user specifies a persona or segment, use persona and customer segment fields in each file's metadata to filter.
 - If the user specifies a date range, filter by the date field in each file.
-- If the user says "all", include every file in `output/interviews/`. Also check `context/interviews/` for finalized interviews.
-- If unclear, list available interviews with their metadata (customer, date, topic, persona) and ask which ones to include.
+- If the user says "all", include every file in `data/interviews/`. Also check `context/interviews/` for prior finalized synthesis.
+- If unclear, list available interviews from `data/interviews/` with their metadata (customer, date, topic, persona) and ask which ones to include.
 
 ### 2. Load context
 
@@ -38,7 +38,7 @@ Read these files to ground the synthesis in company strategy:
 - `context/personas.md` — persona definitions for segment analysis
 - `context/competitors.md` — competitive landscape for positioning insights
 
-Check for previous synthesis reports in `output/interviews/` and `context/interviews/` on related topics to avoid duplication and to build on prior findings.
+Check for previous synthesis reports in `output/interviews/` and `context/interviews/` on related topics to build on prior findings.
 
 ### 3. Extract observations
 
@@ -92,6 +92,7 @@ Use this structure:
 # Research Synthesis: [Topic]
 
 **Date:** [YYYY-MM-DD]
+**Status:** Draft
 **Interviews analyzed:** [Count and customer names]
 **Scope:** [What was included — all interviews, specific topic, date range, etc.]
 **Previous synthesis on this topic:** [Link to prior report if exists, or "None"]

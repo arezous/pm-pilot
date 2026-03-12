@@ -1,15 +1,15 @@
-# /interviews-synthesize
+# /synthesize-interviews
 
 Turn customer interview notes into themes, recommendations, and a standalone pain points document.
 
 ## How to use it
 
-Type `/interviews-synthesize` followed by the topic area:
+Type `/synthesize-interviews` followed by the topic area:
 
 ```
-/interviews-synthesize onboarding
-/interviews-synthesize checkout flow
-/interviews-synthesize all
+/synthesize-interviews onboarding
+/synthesize-interviews checkout flow
+/synthesize-interviews all
 ```
 
 Provide interview notes in one of two ways:

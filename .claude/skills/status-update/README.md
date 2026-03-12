@@ -26,4 +26,4 @@ A markdown document saved to `output/` (e.g., `update-search-redesign.md`). It p
 - Have current status or metrics ready. It asks rather than guesses.
 - Fill in `context/company.md` and `context/product.md` first for better grounding.
 - Checks `context/prd/` for related artifacts to reference.
-- Pair with `/interviews-synthesize` to include user research findings in updates.
+- Pair with `/synthesize-interviews` to include user research findings in updates.

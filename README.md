@@ -18,7 +18,10 @@ pmos-starterkit/
 │   ├── prd/           # Finalized PRDs, briefs, one-pagers
 │   ├── interviews/    # Finalized synthesis and pain points
 │   ├── competitors/   # Finalized deep dives and landscapes
-│   └── meetings/      # Finalized meeting notes
+│   ├── meetings/      # Finalized meeting notes
+│   ├── prioritization/ # Finalized prioritization analyses
+│   └── feedback/      # Triaged feedback reports
+├── data/              # Raw source material (transcripts, exports, dumps)
 ├── template/          # Output formats and style guides
 ├── output/            # Drafts and generated artifacts
 └── setup/             # Environment configuration
@@ -30,11 +33,16 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (`c
 
 | Command | What it does |
 |---|---|
+| `/onboard` | Set up your workspace, populate context files |
 | `/prd` | Write a PRD, one-pager, or project brief |
-| `/competitors-analyze` | Deep dive on a company or full landscape analysis |
-| `/interviews-synthesize` | Turn interview notes into themes and recommendations |
+| `/analyze-competitors` | Deep dive on a company or full landscape analysis |
+| `/synthesize-interviews` | Turn interview notes into themes and recommendations |
 | `/meeting-notes` | Transform meeting transcripts into decisions and action items |
 | `/status-update` | Status update matched to the audience |
+| `/prioritize` | Decide what to build by scoring features against context |
+| `/triage-feedback` | Categorize, prioritize, and route customer feedback |
+| `/break-down` | Break a feature or PRD into buildable work items |
+| `/release-notes` | Draft release notes or changelog from shipped work |
 
 ## Getting Started
 

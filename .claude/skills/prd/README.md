@@ -25,5 +25,5 @@ A markdown document saved to `output/prd/` (e.g., `prd-search-redesign.md`, `one
 
 - For PRDs, it asks what stage you're at. A kickoff PRD is 300-500 words. A launch-ready PRD is 1500-2000 words.
 - Fill in `context/product.md` and `context/personas.md` first for better results.
-- Pair with `/interviews-synthesize` to ground specs in real user evidence.
+- Pair with `/synthesize-interviews` to ground specs in real user evidence.
 - Say "finalize this" to move a spec to `context/prd/`.

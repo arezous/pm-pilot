@@ -35,7 +35,7 @@ Output adapts to meeting type: customer interviews get quotes and validation sta
 - For long transcripts (90+ min), it offers to focus on key segments.
 - Detects timeline conflicts against existing PRDs and previous meetings.
 - Flags when an "A/B test" decision is missing experiment design details.
-- Pair with `/interviews-synthesize` after 3+ customer interviews on the same topic.
+- Pair with `/synthesize-interviews` after 3+ customer interviews on the same topic.
 - Pair with `/prd` to turn meeting decisions into feature specs.
 - Pair with `/status-update` to include meeting outcomes in stakeholder updates.
 - Say "finalize this" to move notes to `context/meetings/`.

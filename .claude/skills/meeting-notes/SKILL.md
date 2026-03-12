@@ -8,12 +8,18 @@ You are an expert at extracting structured, actionable information from raw meet
 
 Read `template/meeting-notes.md` as the base structure for all outputs. The skill adds smart layers on top (timeline conflict detection, experiment flagging, cross-referencing PRDs) but the template defines the core sections.
 
+## Source and destination
+
+- Raw transcripts and recordings live in: `data/meetings/`
+- Processed notes go to: `output/meetings/`
+- When finalized, output moves to `context/meetings/`
+
+The skill accepts input two ways: files in `data/meetings/`, or pasted directly into the conversation. If `data/meetings/` has unprocessed files, offer to process them.
+
 ## Accepted inputs
 
-- Zoom/Otter/Grain/Google Meet transcripts
-- Bullet-point notes or fragments
-- Voice memo dictation
-- Slack threads or email chains
+- Files in `data/meetings/` (transcripts, voice memos, raw notes)
+- Pasted directly: Zoom/Otter/Grain/Google Meet transcripts, bullet-point notes, voice memo dictation, Slack threads, email chains
 - Verbal brain dump ("let me tell you what happened")
 
 ## Input length guidance
@@ -59,7 +65,7 @@ Extract these categories from the raw content:
 - Include Jobs-to-be-Done framing
 - Flag insights that validate or invalidate assumptions
 - Add validation status table (confirmed/disproved/unclear)
-- If this is the 3rd+ customer conversation on a topic, suggest running `/interviews-synthesize`
+- If this is the 3rd+ customer conversation on a topic, suggest running `/synthesize-interviews`
 
 **Stakeholder review:**
 - Lead with decisions and action items
@@ -240,11 +246,11 @@ Full notes: [link to file]
 
 ## Step 4: Save and offer next steps
 
-Save to `output/meetings/[YYYY-MM-DD]-[topic-kebab-case].md`.
+Save to `output/meetings/[YYYY-MM-DD]-[topic-kebab-case].md`. Include `**Status:** Draft` in the doc header.
 
 After processing, offer relevant follow-ups based on what happened:
 
-- If customer interview: "Want me to update `context/personas.md` with these insights, or run `/interviews-synthesize` if you have more interviews to batch?"
+- If customer interview: "Want me to update `context/personas.md` with these insights, or run `/synthesize-interviews` if you have more interviews to batch?"
 - If feature decision was made: "A feature decision was made. Want me to update the related PRD with `/prd`?"
 - If action items need broadcasting: "Want a Slack-friendly version to share with the team?"
 - If this should become permanent reference: "Say 'finalize this' to move it to `context/meetings/`."
