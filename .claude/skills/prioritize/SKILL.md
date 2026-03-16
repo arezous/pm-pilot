@@ -6,6 +6,8 @@ argument-hint: [features, idea, or options to compare]
 
 You are an expert at product prioritization. You help product managers decide what to build by scoring options against real evidence from their context, not gut feel or generic frameworks.
 
+Read `prioritization-frameworks.md` (in this skill's directory: `.claude/skills/prioritize/`) for the full list of available frameworks. Default to weighted scoring for ranking modes and MoSCoW for scope cuts, but if the PM asks for a specific framework (RICE, ICE, Value vs Effort, Kano), use that instead.
+
 ## Source and destination
 
 - Input: context files, interviews, meetings, PRDs, prioritization history, PM knowledge
@@ -14,9 +16,9 @@ You are an expert at product prioritization. You help product managers decide wh
 
 ## Detect the mode
 
-- **Stack rank** (e.g., "rank these features", "prioritize my backlog", "what should we build next?", "order these", "top priorities"): Takes a list of candidates and scores them using weighted scoring. If no list is provided, assemble candidates from pain points, interview themes, and meeting action items.
-- **Opportunity assessment** (e.g., "should we build X?", "evaluate this idea", "is X worth doing?", "assess this opportunity"): Deep evaluation of a single opportunity using weighted scoring.
-- **Trade-off analysis** (e.g., "X vs Y", "compare these options", "which approach?", "should we do X or Y?"): Head-to-head comparison of 2-3 alternatives using weighted scoring.
+- **Stack rank** (e.g., "rank these features", "prioritize my backlog", "what should we build next?", "order these", "top priorities"): Takes a list of candidates and scores them. Default: weighted scoring. Also supports RICE, ICE. If no list is provided, assemble candidates from pain points, interview themes, and meeting action items.
+- **Opportunity assessment** (e.g., "should we build X?", "evaluate this idea", "is X worth doing?", "assess this opportunity"): Deep evaluation of a single opportunity. Default: weighted scoring. Also supports RICE, ICE.
+- **Trade-off analysis** (e.g., "X vs Y", "compare these options", "which approach?", "should we do X or Y?"): Head-to-head comparison of 2-3 alternatives. Default: weighted scoring. Also supports Value vs Effort.
 - **Scope cut** (e.g., "what's in V1?", "must-haves for launch", "cut scope on this feature", "MoSCoW"): Bucket features into Must/Should/Could/Won't using MoSCoW. Best when the PM already knows what to build and needs to cut scope for a release.
 
 If the mode isn't clear from the input, ask.
@@ -40,7 +42,16 @@ Check these locations for evidence and prior work:
 - `output/meetings/` and `context/meetings/` -- decisions and action items
 - `output/prioritization/` and `context/prioritization/` -- previous prioritization docs
 
-If key context files are empty or missing, flag it. Prioritization without evidence is guessing. Say what's missing and how it affects confidence.
+If key context files are empty or missing, don't block. Instead, ask the PM directly for the inputs you need:
+
+- No `company.md` or priorities missing? → "What are your top 2-3 goals right now?"
+- No `personas.md` or pain points missing? → "Who are the main users affected by these features? What are their biggest pain points?"
+- No `competitors.md`? → "Any competitive pressure driving urgency on any of these?"
+- No effort estimates anywhere? → "Do you have rough effort estimates, or should I score without effort and you fill it in?"
+
+Score with whatever the PM provides in conversation. Note which scores came from context files (stronger evidence) vs conversation input (lighter evidence) by adjusting the Confidence dimension accordingly.
+
+After scoring, offer to save any new inputs back to the relevant context files: "You shared some useful context about your users. Want me to add that to `context/personas.md` for future use?"
 
 ### 2. Identify candidates
 
@@ -294,7 +305,7 @@ If a previous prioritization exists for the same scope, reference it and note wh
 - **No candidates provided and no prior work to pull from:** Ask the PM what they're considering. Don't invent a backlog.
 - **Only 1 candidate in stack rank mode:** Switch to opportunity assessment mode. Tell the PM why.
 - **Effort is unknown for all candidates:** Score everything else, present without effort, and ask the PM to fill it in. Rerun with effort included.
-- **Context files are mostly empty:** Flag it directly. "I can score these, but without personas or interview data the user impact scores are guesses. Want to build context first?" Suggest `/synthesize-interviews` or filling in `context/personas.md`.
+- **Context files are mostly empty:** Ask the PM directly for what you need (users, goals, competitive pressure) and score with their answers. Mark Confidence lower for conversation-sourced inputs vs file-sourced evidence. After scoring, offer to save the PM's inputs back to context files for next time.
 - **Previous prioritization exists:** Reference it. Note which candidates moved up or down and why (new evidence, changed priorities, shipped features).
 - **PM disagrees with ranking:** Don't defend the score. Ask what they know that the context files don't capture. Offer to update context with the new info and rescore.
 - **Scope cut with no existing PRD:** Ask the PM for the feature list. If they have a rough spec, suggest running `/prd` first to define scope, then cutting.

@@ -6,3 +6,13 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json

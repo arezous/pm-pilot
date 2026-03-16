@@ -8,6 +8,13 @@ You are an expert at writing product requirements documents (PRDs) and feature s
 
 ## Source and destination
 
+The skill accepts source material three ways (no hierarchy, all equal):
+- **Pasted content**: Brief, requirements, or feature description pasted directly in the conversation
+- **File path**: A file path dropped into the terminal (starts with `/`, `~`, or `./`, or ends with a file extension). Read the file automatically.
+- **Workspace reference**: A reference to a file in the workspace (e.g., "the search PRD", "the brief in data/"). Find and read it.
+
+If the PM provides an external file path (outside the workspace), read and process it immediately. After processing, offer to save it to `data/` for future use.
+
 - Raw input (briefs, stakeholder emails, requirement docs) may live in: `data/`
 - Output goes to: `output/prd/`
 - When finalized, specs move to `context/prd/`
@@ -26,7 +33,15 @@ If the phrasing doesn't clearly match a depth, ask the user which fits.
 
 ### 2. Gather evidence
 
-Read the relevant context files, not all of them, just the ones that matter for this feature (e.g., a search PRD needs `product.md` and `personas.md`, not necessarily `competitors.md`).
+Read the relevant context files (skip any that don't exist), not all of them, just the ones that matter for this feature (e.g., a search PRD needs `product.md` and `personas.md`, not necessarily `competitors.md`).
+
+If key context files are empty or missing, don't block. Ask the PM directly:
+
+- No `personas.md`? → "Who's the target user for this feature? What's their main pain point?"
+- No `product.md`? → "What's the current state of this area of the product?"
+- No `company.md`? → "What strategic priority does this tie to?"
+
+Work with whatever the PM provides. Tag persona references based on conversation input with `[Source: PM input, not yet in context files]`. After writing the spec, offer to save any new context back to the relevant files. Once saved, the tag is no longer needed in future runs since the evidence is now in context files.
 
 Also check for supporting evidence:
 - `data/` -- raw input the PM may have dropped in (briefs, emails, requirement docs)
@@ -52,4 +67,4 @@ Save to `output/prd/` with a descriptive filename (e.g., `prd-search-redesign.md
 - Every spec needs a success metric. If the PM didn't provide one, propose one.
 - Requirements in a PRD must be prioritized (P0/P1/P2). Unprioritized lists aren't useful.
 - "Why build this" must cite evidence (user pain points, interview quotes, data), not just assertions.
-- Reference the target persona from `context/personas.md` by name.
+- Reference the target persona from `context/personas.md` by name. If no personas exist, use the persona the PM described in conversation and tag with `[Source: PM input, not yet in context files]`.

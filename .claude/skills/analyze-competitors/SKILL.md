@@ -65,7 +65,7 @@ Don't fabricate quotes or stats. If you can't find something, say so.
 
 Use when a baseline analysis already exists and you need to catch what changed. Run monthly or before key planning sessions.
 
-1. **Find the baseline.** Check `context/competitors/` and `output/competitors/` for the most recent deep dive or monitoring report. If none exists, tell the PM and suggest a deep dive first.
+1. **Find the baseline.** Check `context/competitors/` and `output/competitors/` for the most recent deep dive or monitoring report. If none exists, don't block. Instead, offer: "No baseline analysis exists yet. I can either run a quick baseline from what you know plus web research, or do a full deep dive first. Which do you prefer?" If the PM chooses the quick baseline, gather competitor names and key details from the PM, supplement with web research, and use that as the starting point for monitoring.
 
 2. **Check internal intel since last report.** Search for new competitor mentions added after the last report date. Look for new sales losses, customer quotes, or feature requests citing competitors.
    - `data/interviews/` and `data/meetings/` -- raw transcripts

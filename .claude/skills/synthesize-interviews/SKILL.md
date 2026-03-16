@@ -8,7 +8,14 @@ You are an expert at qualitative research synthesis. You help product managers t
 
 ## Source and destination
 
-- Raw input (transcripts, notes, voice memos) lives in: `data/interviews/`
+The skill accepts input three ways (no hierarchy, all equal):
+- **Pasted content**: Transcript or notes pasted directly in the conversation
+- **File path**: A file path dropped into the terminal (starts with `/`, `~`, or `./`, or ends with a file extension). Read the file automatically.
+- **Workspace reference**: A reference to a file in the workspace (e.g., "the Sarah interview", "interviews from last week"). Find and read it from `data/interviews/`, `output/interviews/`, or `context/interviews/`.
+
+If the PM provides an external file path (outside the workspace), read and process it immediately. After processing, offer to save it to `data/interviews/` for future use.
+
+- Workspace interview data lives in: `data/interviews/`
 - Synthesis output goes to: `output/interviews/`
 - Filename format: `synthesis-[topic]-[YYYY-MM-DD].md`
 - When finalized, output moves to `context/interviews/`
@@ -17,13 +24,18 @@ You are an expert at qualitative research synthesis. You help product managers t
 
 ### 1. Determine scope
 
-Figure out which interviews to include:
+Detect the input mode:
+- **Pasted content** (text in the conversation that isn't a file path or workspace reference): Use it directly as interview data. No file lookup needed.
+- **File path** (starts with `/`, `~`, `./`, or ends with a file extension like `.md`, `.txt`): Read the file and use its contents.
+- **Workspace reference** (names a topic, persona, date range, or says "all"): Find matching files using the rules below.
+
+For workspace references, figure out which interviews to include:
 
 - If the user specifies a topic (e.g., "FitProfile abandonment"), grep across all files in `data/interviews/` for relevant content and select matching files.
 - If the user specifies a persona or segment, use persona and customer segment fields in each file's metadata to filter.
 - If the user specifies a date range, filter by the date field in each file.
 - If the user says "all", include every file in `data/interviews/`. Also check `context/interviews/` for prior finalized synthesis.
-- If unclear, list available interviews from `data/interviews/` with their metadata (customer, date, topic, persona) and ask which ones to include.
+- If no interviews exist in `data/interviews/` and the PM hasn't pasted content, ask: "Can you paste the interview notes here, drop a file path, or point me to where they live?"
 
 ### 2. Load context
 
@@ -32,11 +44,19 @@ Context priority (when information conflicts, trust in this order):
 2. Previous synthesis reports — build on existing findings, don't duplicate
 3. Company context — strategic framing and positioning
 
-Read these files to ground the synthesis in company strategy:
+Read these files to ground the synthesis in company strategy (skip any that don't exist):
 
 - `context/company.md` — strategic priorities, product areas, current goals
 - `context/personas.md` — persona definitions for segment analysis
 - `context/competitors.md` — competitive landscape for positioning insights
+
+If key context files are empty or missing, don't block. Instead, ask the PM directly for what you need:
+
+- No `company.md` or priorities missing? → "What are your top strategic priorities? I'll use them to connect themes to strategy."
+- No `personas.md`? → "Who are the main user types? I'll use them for segment analysis."
+- No `competitors.md`? → Skip competitive positioning in the synthesis. It's not essential.
+
+Work with whatever the PM provides. Tag claims based on conversation input with `[Source: PM input, not yet in context files]`. After synthesis, offer to save any new context back to the relevant files. Once saved, the tag is no longer needed in future runs since the evidence is now in context files.
 
 Check for previous synthesis reports in `output/interviews/` and `context/interviews/` on related topics to build on prior findings.
 

@@ -14,20 +14,14 @@ pmos-starterkit/
 │   ├── company.md     # Who you are, goals, constraints
 │   ├── competitors.md # Competitive landscape summary
 │   ├── personas.md    # Who you serve, their needs
-│   ├── product.md     # What you have, what works
-│   ├── prd/           # Finalized PRDs, briefs, one-pagers
-│   ├── interviews/    # Finalized synthesis and pain points
-│   ├── competitors/   # Finalized deep dives and landscapes
-│   ├── meetings/      # Finalized meeting notes
-│   ├── prioritization/ # Finalized prioritization analyses
-│   └── feedback/      # Triaged feedback reports
+│   └── product.md     # What you have, what works
 ├── data/              # Raw source material (transcripts, exports, dumps)
 ├── template/          # Output formats and style guides
 ├── output/            # Drafts and generated artifacts
 └── setup/             # Environment configuration
 ```
 
-Drafts land in `output/`. When finalized, they move to `context/` subfolders (`context/prd/`, `context/interviews/`, `context/competitors/`, `context/meetings/`).
+Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.g., `context/prd/`, `context/interviews/`). Folders are created as the work requires them.
 
 ## Skills
 
@@ -44,9 +38,35 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (`c
 | `/break-down` | Break a feature or PRD into buildable work items |
 | `/release-notes` | Draft release notes or changelog from shipped work |
 
+Every skill accepts input three ways: paste content directly, drop a file path into the terminal, or reference a workspace file. No setup required to start using them.
+
 ## Getting Started
 
+**Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [Cursor](https://www.cursor.com/).**
+
 1. Clone this repository
-2. Set up your environment keys (see [setup/ENV_KEYS_SETUP.md](setup/ENV_KEYS_SETUP.md))
-3. Start a conversation and share what you know about your company, product, or market
+2. Open it in Claude Code or Cursor
+3. Run `/onboard` or just start talking about your company and product
 4. The system will populate your context files and guide you from there
+
+You don't need to fill everything in before you start. Skills work with whatever context exists and ask you directly when something is missing.
+
+## Flexible Input
+
+You can feed information to any skill three ways:
+
+- **Paste it** directly in the conversation (transcript, requirements, feedback, etc.)
+- **Drop a file path** into the terminal (drag a file in, the skill reads it automatically)
+- **Reference a workspace file** by name (e.g., "use the search PRD", "synthesize last week's interviews")
+
+External files (like `~/Downloads/interview-notes.md`) are processed immediately. The skill will offer to save them to the workspace for future use.
+
+## Feedback and Issues
+
+This is an early release. Your feedback makes it better.
+
+- **Report bugs or suggest features:** [Open an issue](../../issues)
+- **Share how you're using it:** [Start a discussion](../../discussions)
+- **Questions or ideas:** [Discussions board](../../discussions)
+
+If something doesn't work the way you expect, or a skill produces bad output, please open an issue with what you tried and what happened. Real examples help the most.

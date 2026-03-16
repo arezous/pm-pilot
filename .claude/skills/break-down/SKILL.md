@@ -18,9 +18,14 @@ You are an expert at breaking product requirements into clear, buildable work it
 
 ### 1. Identify the source
 
-- If the PM names a feature or PRD, find the matching spec in `output/prd/` or `context/prd/`
-- If the PM describes a feature directly, use that as the source
-- If no spec exists, suggest running `/prd` first to define scope
+The skill accepts input three ways (no hierarchy, all equal):
+- **Pasted content**: PRD, feature description, or requirements pasted directly in the conversation. This is the fastest path and works without any files.
+- **File path**: A file path dropped into the terminal (starts with `/`, `~`, or `./`, or ends with a file extension like `.md`, `.txt`). Read the file automatically.
+- **Workspace reference**: The PM names a feature or PRD (e.g., "the search PRD", "break down onboarding"). Find the matching spec in `output/prd/` or `context/prd/`.
+
+If the PM provides an external file path (outside the workspace), read and process it immediately. After processing, offer to save it to `data/` for future use.
+
+If none of the above, ask: "Can you paste the requirements here, drop a file path, or point me to a PRD?"
 
 ### 2. Gather context
 
@@ -148,3 +153,11 @@ If a story fails INVEST, fix it or flag it.
 - **Tie outcomes to real pain points.** The "so that" should connect to evidence from interviews or persona pain points, not generic value.
 - **Don't write implementation details.** Stories describe what, not how. Leave technical approach to engineering.
 - **Flag gaps.** If a PRD requirement is too vague to write a story for, flag it instead of guessing.
+
+## Edge cases
+
+- **No PRD exists:** Ask the PM to paste requirements directly or describe the feature. Stories from pasted content are just as valid as stories from a file. Flag if the description is too thin to write good acceptance criteria.
+- **PRD is too vague:** Flag the vague sections. Write stories for what's clear, list the vague parts as "Needs clarification before stories can be written."
+- **Large feature (20+ stories):** Group by epic, present the summary table first, and ask the PM which epics to detail. Don't dump 30 stories at once.
+- **No matching persona:** Use the closest fit from `context/personas.md` and flag it. If no personas exist, ask the PM directly: "Who's the target user for this feature?" Use their answer and tag with `[Source: PM input, not yet in context files]`. After generating stories, offer to save the persona to `context/personas.md`. Once saved, the tag is no longer needed in future runs.
+- **PM already ran `/prioritize`:** Check `output/prioritization/` for prior scoring. Align Must/Should/Could with the prioritization results. If they conflict, flag it.

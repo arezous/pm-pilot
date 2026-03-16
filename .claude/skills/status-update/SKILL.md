@@ -8,13 +8,20 @@ You are an expert at clear, audience-appropriate communication. You help product
 
 ## Source and destination
 
-- Input: context files, PRDs, meetings, prioritization docs, PM knowledge
+The skill accepts input three ways (no hierarchy, all equal):
+- **Pasted content**: Status, metrics, or progress notes pasted directly in the conversation
+- **File path**: A file path dropped into the terminal (starts with `/`, `~`, or `./`, or ends with a file extension). Read the file automatically.
+- **Workspace reference**: A reference to a file in the workspace (e.g., "the search PRD", "last week's meeting notes"). Find and read it.
+
+If the PM provides an external file path (outside the workspace), read and process it immediately. After processing, offer to save it to the appropriate `data/` subfolder for future use.
+
+- Additional input: context files, PRDs, meetings, prioritization docs
 - Output goes to: `output/`
 - Status updates are typically one-off docs and don't move to `context/`
 
 ## Workflow
 
-1. **Gather context.** Read `context/company.md` and `context/product.md` for grounding. Then check for project-specific evidence:
+1. **Gather context.** Read `context/company.md` and `context/product.md` for grounding (skip any that don't exist or are empty). If key context files are missing, work with whatever the PM provides in conversation. Then check for project-specific evidence:
    - `output/prd/` and `context/prd/` -- specs and artifacts related to the project
    - `output/meetings/` and `context/meetings/` -- recent decisions, blockers, action items
    - `output/prioritization/` and `context/prioritization/` -- what was prioritized and why
