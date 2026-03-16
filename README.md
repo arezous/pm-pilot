@@ -27,7 +27,6 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.
 
 | Command | What it does |
 |---|---|
-| `/onboard` | Set up your workspace, populate context files |
 | `/prd` | Write a PRD, one-pager, or project brief |
 | `/analyze-competitors` | Deep dive on a company or full landscape analysis |
 | `/synthesize-interviews` | Turn interview notes into themes and recommendations |
@@ -46,8 +45,8 @@ Every skill accepts input three ways: paste content directly, drop a file path i
 
 1. Clone this repository
 2. Open it in Claude Code or Cursor
-3. Run `/onboard` or just start talking about your company and product
-4. The system will populate your context files and guide you from there
+3. Run `/onboard` to set up your context files, or just start talking about your company and product
+4. The system will guide you from there
 
 You don't need to fill everything in before you start. Skills work with whatever context exists and ask you directly when something is missing.
 
