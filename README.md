@@ -69,3 +69,5 @@ This is an early release. Your feedback makes it better.
 - **Questions or ideas:** [Discussions board](../../discussions)
 
 If something doesn't work the way you expect, or a skill produces bad output, please open an issue with what you tried and what happened. Real examples help the most.
+
+**Get in touch:** [arezou@solouki.se](mailto:arezou@solouki.se) | [LinkedIn](https://www.linkedin.com/in/arezousolouki/) | [solouki.se](https://solouki.se/)
