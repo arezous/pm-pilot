@@ -16,3 +16,15 @@ Thumbs.db
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Local context (filled locally, ships empty)
+context/company.md
+context/competitors.md
+context/personas.md
+context/product.md
+
+# Local data and output
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep

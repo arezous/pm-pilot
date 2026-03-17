@@ -36,6 +36,7 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.
 | `/triage-feedback` | Categorize, prioritize, and route customer feedback |
 | `/break-down` | Break a feature or PRD into buildable work items |
 | `/release-notes` | Draft release notes or changelog from shipped work |
+| `/critique` | Pressure-test a document against your product context |
 
 Every skill accepts input three ways: paste content directly, drop a file path into the terminal, or reference a workspace file. No setup required to start using them.
 

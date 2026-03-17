@@ -29,6 +29,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - `/triage-feedback` — categorizes, prioritizes, and routes incoming customer feedback
 - `/break-down` — breaks a feature or PRD into buildable work items
 - `/release-notes` — drafts release notes or changelog from shipped work
+- `/critique` — pressure-tests a document against your product context before sharing
 
 **Data** in `data/` holds raw source material (interview transcripts, survey exports, analytics dumps). Skills look here for unprocessed inputs.
 
