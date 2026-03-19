@@ -1,5 +1,6 @@
 ---
 name: status-update
+version: 1.0.0
 description: Write a status update for a project or initiative. Matches the style to the audience.
 argument-hint: [project-name]
 ---

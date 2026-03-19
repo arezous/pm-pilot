@@ -1,5 +1,6 @@
 ---
 name: triage-feedback
+version: 1.0.0
 description: Categorize, prioritize, and route incoming customer feedback (bugs, feature requests, complaints).
 argument-hint: [paste feedback or topic]
 ---

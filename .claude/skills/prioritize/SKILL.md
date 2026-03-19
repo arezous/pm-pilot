@@ -1,5 +1,6 @@
 ---
 name: prioritize
+version: 1.0.0
 description: Decide what to build next. Stack rank features, assess opportunities, compare trade-offs, or cut scope.
 argument-hint: [features, idea, or options to compare]
 ---

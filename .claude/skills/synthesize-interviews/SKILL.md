@@ -1,5 +1,6 @@
 ---
 name: synthesize-interviews
+version: 1.0.0
 description: Synthesize customer interview notes into themes, findings, and recommendations.
 argument-hint: [topic]
 ---

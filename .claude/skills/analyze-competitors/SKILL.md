@@ -1,5 +1,6 @@
 ---
 name: analyze-competitors
+version: 1.0.0
 description: Run a competitive analysis, either a full landscape or a deep dive on a single company.
 argument-hint: [company-name or market-area]
 ---

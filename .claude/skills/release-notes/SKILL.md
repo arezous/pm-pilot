@@ -1,5 +1,6 @@
 ---
 name: release-notes
+version: 1.0.0
 description: Draft release notes or changelog entries from PRDs, meeting decisions, and shipped work.
 argument-hint: [release name or version]
 ---

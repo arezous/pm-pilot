@@ -1,5 +1,6 @@
 ---
 name: meeting-notes
+version: 1.0.0
 description: Transform meeting transcripts, voice memos, or raw notes into structured action items, decisions, and insights.
 argument-hint: [paste transcript or topic]
 ---

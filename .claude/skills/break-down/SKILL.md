@@ -1,5 +1,6 @@
 ---
 name: break-down
+version: 1.0.0
 description: Break a feature or PRD into buildable work items (user stories, plain-language issues, or BDD specs).
 argument-hint: [feature name or PRD reference]
 ---

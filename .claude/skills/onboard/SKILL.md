@@ -1,5 +1,6 @@
 ---
 name: onboard
+version: 1.0.0
 description: Set up the workspace by guiding the PM through populating context files.
 ---
 

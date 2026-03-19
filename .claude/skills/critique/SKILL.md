@@ -1,5 +1,6 @@
 ---
 name: critique
+version: 1.0.0
 description: Pressure-test a document (PRD, strategy, pitch, positioning) against your product context. Finds gaps, weak logic, and unvalidated assumptions.
 argument-hint: [document-or-topic]
 ---
