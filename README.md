@@ -1,6 +1,6 @@
 # PM Operating System
 
-Your AI-powered copilot for modern product management. Built for Claude Code and Cursor.
+Your AI-powered copilot for modern product management. Built for Claude Code, Cursor, and Codex.
 
 ## Philosophy
 
@@ -42,14 +42,32 @@ Every skill accepts input three ways: paste content directly, drop a file path i
 
 ## Getting Started
 
-**Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [Cursor](https://www.cursor.com/).**
+**Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cursor](https://www.cursor.com/), or Codex.**
 
 1. Clone this repository
-2. Open it in Claude Code or Cursor
+2. Open it in Claude Code, Cursor, or Codex
 3. Run `/onboard` to set up your context files, or just start talking about your company and product
 4. The system will guide you from there
 
 You don't need to fill everything in before you start. Skills work with whatever context exists and ask you directly when something is missing.
+
+## Using PM Pilot in Codex
+
+In Codex, type the same PM Pilot command names at the start of your message:
+
+- `/onboard`
+- `/prd`
+- `/analyze-competitors`
+- `/synthesize-interviews`
+- `/meeting-notes`
+- `/status-update`
+- `/prioritize`
+- `/triage-feedback`
+- `/break-down`
+- `/release-notes`
+- `/critique`
+
+This is command-name parity in chat. It does not imply native slash-command registration.
 
 ## Flexible Input
 
