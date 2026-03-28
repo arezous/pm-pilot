@@ -1,47 +1,80 @@
-# Competitive Deep Dive: [Company Name]
-
-**Date:** YYYY-MM-DD
-**Sources:** [count]
-
+---
+type: competitor_deep_dive
+name:
+segment:
+icp:
+overlap_area:
+threat_level: # low | medium | high
+status: in-progress # in-progress | complete
+last_reviewed:
 ---
 
-## At a Glance
+**Status:** Draft
 
-| | |
-|---|---|
-| **What they do** | [one sentence] |
-| **Who they serve** | [target segments] |
-| **Pricing** | [model and range] |
-| **Stage** | [funding, headcount, growth signals] |
+# 1. Snapshot
 
----
+## 1.1 Company profile
+- Founded:
+- Stage (bootstrapped/VC, funding signals):
+- Team size estimate:
+- Key markets:
 
-## Product & Strategy
+## 1.2 Target customers & JTBD
+- Primary ICP:
+- Key personas (buyer vs user):
+- Top 3 JTBDs they solve:
 
-**Core product:** [what they actually ship, not marketing copy]
-**Recent moves:** [last 12 months, launches, pivots, acquisitions]
-**Where they're heading:** [signals from job postings, exec quotes, roadmap hints]
+## 1.3 Positioning & proof
+- Tagline / one-liner:
+- Category they claim:
+- 2-3 strongest proof points (logos, metrics, case studies):
 
----
+# 2. Product & experience
 
-## SWOT
+## 2.1 Product overview
+- Main product surfaces:
+- Platform shape (suite vs point solution, extensibility, integrations):
+- Notable AI features (if any):
 
-| Strengths | Weaknesses |
-|---|---|
-| [evidence/source] | [evidence/source] |
+## 2.2 Feature matrix (vs us)
+- Core capabilities:
+- Where they are clearly ahead:
+- Where we are at parity:
+- Where we are ahead:
 
-| Opportunities | Threats |
-|---|---|
-| [gaps they could exploit] | [risks to their position] |
+# 3. Business model & pricing
 
----
+## 3.1 Pricing model
+- Value metric (seats, usage, revenue, etc.):
+- Public plans / tiers:
+- Add-ons and upsells:
 
-## Our Angle
+# 4. Strategy & differentiation
 
-[How we win against them, framed through what our personas care about. Cite specific pain points from context/personas.md.]
+## 4.1 Stated strategy and themes
+- Long-term themes from blog / roadmap / messaging:
+- What they believe about the future of the space:
 
----
+## 4.2 Moats & risks (SWOT-lite)
+- Strengths:
+- Weaknesses:
+- Opportunities:
+- Threats:
 
-## Sources
+# 5. Evidence & artifacts
 
-1. [source]
+- Key URLs (homepage, pricing, docs, changelog, blog, careers):
+- Notable releases & dates:
+- Customer quotes / case studies (short):
+
+# 6. Implications for us
+
+## 6.1 Key insights
+- Insight 1:
+- Insight 2:
+- Insight 3:
+
+## 6.2 Concrete actions
+- Copy / adapt:
+- Counter-position:
+- Ignore / de-prioritize:
