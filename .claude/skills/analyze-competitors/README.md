@@ -33,4 +33,5 @@ After research, it offers to update `context/competitors.md` with new findings. 
 - Landscape analyses lead with a strategic recommendation, not a summary.
 - Run monitoring monthly or before key planning sessions to stay current.
 - Fill in `context/product.md` and `context/personas.md` first so the "our angle" framing is grounded.
+- Pair with `/product-teardown` to go deeper on a competitor's product (features, UX, architecture).
 - Pair with `/prd` to turn competitive insights into feature specs.
