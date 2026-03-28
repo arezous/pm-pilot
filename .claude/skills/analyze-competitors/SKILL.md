@@ -1,6 +1,6 @@
 ---
 name: analyze-competitors
-version: 1.2.0
+version: 1.3.0
 description: Run a competitive analysis, either a full landscape or a deep dive on a single company.
 argument-hint: [company-name or market-area]
 ---
@@ -17,7 +17,7 @@ You are an expert at competitive intelligence. You help product managers underst
 ## Detect the mode
 
 - **Deep dive** (e.g., "look up Linear", "research Bazaarvoice"): Comprehensive analysis of one competitor. Save a detailed research doc to `output/competitors/` and offer to update `context/competitors.md`.
-- **Landscape** (e.g., "competitive analysis of UGC platforms", "who are our competitors?"): Full market comparison. Save to `output/competitors/`.
+- **Landscape** (e.g., "competitive analysis of UGC platforms", "who are our competitors?", "synthesize competitors", "competitive synthesis", "positioning map", "what patterns do we see"): Full market comparison or synthesis of existing analysis. Save to `output/competitors/`.
 - **Monitoring** (e.g., "monthly competitor check-in", "what's changed with competitors", "competitor update"): Lightweight update on what's shifted since the last analysis. Use this for regular check-ins, not first-time research. See the Monitoring workflow below.
 
 ## Deep dive / Landscape workflow
@@ -25,6 +25,24 @@ You are an expert at competitive intelligence. You help product managers underst
 Read the matching template before producing output:
 - Deep dive: `template/competitive-deep-dive.md`
 - Landscape: `template/competitive-landscape.md`
+
+### Landscape: check for existing analysis first
+
+Before doing first-time research, check `context/competitors/` and `output/competitors/` for existing deep dives (`competitive-deep-dive-*.md`) and teardowns (`product-teardown-*.md`).
+
+- If **3+ deep dives or teardowns exist**: Switch to synthesis mode. Read all existing docs, skip web research, and produce a cross-competitor synthesis following the landscape template. For each section:
+  - Section 1 (Market overview): synthesize market trends from deep dives
+  - Section 2 (Competitive set): list direct vs adjacent from existing analysis
+  - Section 3 (Positioning map): place competitors on axes that reveal the most strategic insight for positioning
+  - Section 4 (Capability & UX landscape): identify table-stakes vs differentiating capabilities across all teardowns
+  - Section 5 (Pricing & GTM): synthesize pricing models and land motions from deep dives
+  - Section 6 (Key insights): collect the highest-signal insights from teardowns, tag with competitor names
+  - Section 7 (Implications): where to lean in, where not to compete, questions and bets to validate
+  Save to `output/competitors/competitive-landscape-[YYYY-MM-DD].md`. Offer to update `context/competitors.md`.
+
+- If **fewer than 3 exist**: Run the first-time landscape research workflow below.
+
+### Deep dive / First-time landscape workflow
 
 1. **Start with internal intel.** Before any web search, check what you already know. Search these locations for the competitor name (or related terms like "switched to", "lost deal", "chose", "vs"):
    - `data/interviews/`, `context/interviews/`, and `output/interviews/` -- customer quotes comparing you to competitors, reasons for switching, feature gaps mentioned
