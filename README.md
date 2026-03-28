@@ -29,6 +29,7 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.
 |---|---|
 | `/prd` | Write a PRD, one-pager, or project brief |
 | `/analyze-competitors` | Deep dive on a company or full landscape analysis |
+| `/product-teardown` | Tear down a competitor's product: features, UX, architecture |
 | `/synthesize-interviews` | Turn interview notes into themes and recommendations |
 | `/meeting-notes` | Transform meeting transcripts into decisions and action items |
 | `/status-update` | Status update matched to the audience |
@@ -58,6 +59,7 @@ In Codex, type the same PM Pilot command names at the start of your message:
 - `/onboard`
 - `/prd`
 - `/analyze-competitors`
+- `/product-teardown`
 - `/synthesize-interviews`
 - `/meeting-notes`
 - `/status-update`
