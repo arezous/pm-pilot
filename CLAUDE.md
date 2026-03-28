@@ -22,6 +22,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - `/onboard` — sets up the workspace by populating context files
 - `/prd` — produces PRDs, briefs, and one-pagers grounded in context
 - `/analyze-competitors` — runs a competitive analysis for a market or feature area
+- `/product-teardown` — tears down a competitor's product: features, UX, architecture, growth mechanics
 - `/synthesize-interviews` — processes interview transcripts into structured insights
 - `/meeting-notes` — transforms meeting transcripts into structured decisions, action items, and insights
 - `/status-update` — creates stakeholder communications, matches style to audience

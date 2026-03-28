@@ -42,6 +42,8 @@ last_reviewed:
 - Where we are at parity:
 - Where we are ahead:
 
+_For detailed product teardown, see: [link to teardown doc if one exists]_
+
 # 3. Business model & pricing
 
 ## 3.1 Pricing model

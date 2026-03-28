@@ -1,6 +1,6 @@
 ---
 name: analyze-competitors
-version: 1.1.0
+version: 1.2.0
 description: Run a competitive analysis, either a full landscape or a deep dive on a single company.
 argument-hint: [company-name or market-area]
 ---
@@ -43,6 +43,7 @@ Read the matching template before producing output:
    - Weaknesses (user reviews on G2/Capterra, complaints, churn signals)
 3. After research, offer to update `context/competitors.md` with new or updated entries.
 4. Save detailed output to `output/competitors/` with a descriptive filename (e.g., `competitive-deep-dive-linear-2026-03-12.md` or `competitive-landscape-ugc-platforms-2026-03-12.md`). For deep dives, populate the frontmatter fields (name, segment, icp, overlap_area, threat_level, last_reviewed) and set `status: in-progress` or `status: complete`. Include `**Status:** Draft` in the body after the frontmatter — this tracks document lifecycle (Draft / In Review / Approved), separate from the frontmatter `status` which tracks research completeness.
+5. If the PM asks to go deeper on the product's features, UX, or technical architecture, suggest running `/product-teardown [name]` instead of expanding the deep dive.
 
 ## Quality rules
 
