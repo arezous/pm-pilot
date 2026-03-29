@@ -5,7 +5,6 @@ segment:
 icp:
 overlap_area:
 threat_level: # low | medium | high
-status: in-progress # in-progress | complete
 last_reviewed:
 ---
 
