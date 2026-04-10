@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions or ideas
+    url: https://github.com/arezous/pm-pilot/discussions
+    about: Ask questions or share ideas in Discussions
+  - name: Email
+    url: mailto:arezou@solouki.se
+    about: Reach out directly

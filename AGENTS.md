@@ -18,6 +18,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - `/onboard`
 - `/prd`
 - `/analyze-competitors`
+- `/product-teardown`
 - `/synthesize-interviews`
 - `/meeting-notes`
 - `/status-update`

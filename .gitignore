@@ -22,6 +22,7 @@ context/company.md
 context/competitors.md
 context/personas.md
 context/product.md
+context/*/
 
 # Local data and output
 data/*
