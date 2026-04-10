@@ -1,32 +1,65 @@
-# PM Operating System
+# PM Pilot v1.5.0
 
 Your AI-powered copilot for modern product management. Built for Claude Code, Cursor, and Codex.
 
-## Philosophy
+For product managers, product leads, and anyone making product decisions.
 
-Most PMs use AI the same way they use Google: one-off questions, zero context. This system works differently. You build context about your company, competitors, personas, and product. Every skill draws from that context so outputs are grounded in your actual world, not generic advice.
+## Why This, Not a Blank AI Chat
+
+Most PMs use AI the same way they use Google: one-off questions, zero memory. Next conversation, you start from scratch. This system works differently:
+
+- **Context compounds.** You build knowledge about your company, competitors, personas, and product. Every skill draws from that context so outputs are grounded in your actual world, not generic advice.
+- **Skills, not prompts.** Instead of crafting the right prompt every time, you run `/prd` or `/analyze-competitors` and get structured output that follows proven PM frameworks.
+- **The system learns your product.** The more you use it, the sharper it gets. Interview insights refine personas. Competitive research informs prioritization. PRDs reference real user pain.
+
+```
+/onboard → /analyze-competitors → /synthesize-interviews
+                ↓                         ↓
+          context grows ──────→ /prioritize → /prd → /break-down
+                                    ↑
+              /triage-feedback ──────┘
+```
+
+## Quick Start
+
+**Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cursor](https://www.cursor.com/), or Codex.**
+
+```bash
+# 1. Clone
+git clone <repo-url>
+cd pm-pilot
+
+# 2. Open in Claude Code, Cursor, or Codex
+
+# 3. Set up your context
+/onboard
+```
+
+`/onboard` walks you through populating your company, competitor, persona, and product context. You don't need to fill everything in before you start. Skills work with whatever context exists and ask you directly when something is missing.
 
 ## Project Structure
 
 ```
-pmos-starterkit/
-├── context/           # What you know (living documents)
-│   ├── company.md     # Who you are, goals, constraints
-│   ├── competitors.md # Competitive landscape summary
-│   ├── personas.md    # Who you serve, their needs
-│   └── product.md     # What you have, what works
-├── data/              # Raw source material (transcripts, exports, dumps)
-├── template/          # Output formats and style guides
-├── output/            # Drafts and generated artifacts
-└── setup/             # Environment configuration
+.claude/
+  skills/          # Skill definitions (SKILL.md + README.md each)
+context/           # What you know (living documents, grows through use)
+  company.md       # Who you are, goals, constraints
+  competitors.md   # Competitive landscape summary
+  personas.md      # Who you serve, their needs
+  product.md       # What you have, what works
+data/              # Raw source material (transcripts, exports, dumps)
+template/          # Output formats and style guides
+  styles/          # Audience-specific styles (executive, Slack, Notion)
+output/            # Drafts and generated artifacts
 ```
 
-Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.g., `context/prd/`, `context/interviews/`). Folders are created as the work requires them.
+Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.g., `context/prd/`, `context/competitors/`). Folders are created as the work requires them.
 
 ## Skills
 
 | Command | What it does |
 |---|---|
+| `/onboard` | Set up your context files (company, competitors, personas, product) |
 | `/prd` | Write a PRD, one-pager, or project brief |
 | `/analyze-competitors` | Deep dive on a company or full landscape analysis |
 | `/product-teardown` | Tear down a competitor's product: features, UX, architecture |
@@ -41,33 +74,26 @@ Drafts land in `output/`. When finalized, they move to `context/` subfolders (e.
 
 Every skill accepts input three ways: paste content directly, drop a file path into the terminal, or reference a workspace file. No setup required to start using them.
 
-## Getting Started
+## The Context System
 
-**Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cursor](https://www.cursor.com/), or Codex.**
+Your context lives in `context/` (gitignored, stays local). Four files, built through `/onboard`:
 
-1. Clone this repository
-2. Open it in Claude Code, Cursor, or Codex
-3. Run `/onboard` to set up your context files, or just start talking about your company and product
-4. The system will guide you from there
+| File | What | How it grows |
+|---|---|---|
+| `company.md` | Who you are, priorities, constraints | You fill it, refine over time |
+| `competitors.md` | Competitive landscape summary | `/analyze-competitors` updates it |
+| `personas.md` | Users, goals, pains with signal strength | `/synthesize-interviews` enriches it |
+| `product.md` | What you have, differentiators, current state | Updated as you ship and learn |
 
-You don't need to fill everything in before you start. Skills work with whatever context exists and ask you directly when something is missing.
+Skills read from these files. Your product data never leaves your machine.
 
 ## Using PM Pilot in Codex
 
 In Codex, type the same PM Pilot command names at the start of your message:
 
-- `/onboard`
-- `/prd`
-- `/analyze-competitors`
-- `/product-teardown`
-- `/synthesize-interviews`
-- `/meeting-notes`
-- `/status-update`
-- `/prioritize`
-- `/triage-feedback`
-- `/break-down`
-- `/release-notes`
-- `/critique`
+- `/onboard`, `/prd`, `/analyze-competitors`, `/product-teardown`
+- `/synthesize-interviews`, `/meeting-notes`, `/status-update`
+- `/prioritize`, `/triage-feedback`, `/break-down`, `/release-notes`, `/critique`
 
 This is command-name parity in chat. It does not imply native slash-command registration.
 
@@ -81,7 +107,16 @@ You can feed information to any skill three ways:
 
 External files (like `~/Downloads/interview-notes.md`) are processed immediately. The skill will offer to save them to the workspace for future use.
 
-## Feedback and Issues
+## Prerequisites
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cursor](https://www.cursor.com/), or Codex
+- No dependencies, no installs, no API keys
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add skills, templates, and improvements.
+
+## Feedback
 
 This is an early release. Your feedback makes it better.
 
@@ -92,3 +127,7 @@ This is an early release. Your feedback makes it better.
 If something doesn't work the way you expect, or a skill produces bad output, please open an issue with what you tried and what happened. Real examples help the most.
 
 **Get in touch:** [arezou@solouki.se](mailto:arezou@solouki.se) | [LinkedIn](https://www.linkedin.com/in/arezousolouki/) | [solouki.se](https://solouki.se/)
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
