@@ -1,4 +1,4 @@
-# PM Pilot v1.5.0
+# PM Pilot v1.6.0
 
 Your AI-powered copilot for modern product management. Built for Claude Code, Cursor, and Codex.
 
