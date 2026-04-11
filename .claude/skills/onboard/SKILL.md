@@ -1,6 +1,6 @@
 ---
 name: onboard
-version: 1.0.0
+version: 1.1.0
 description: Set up the workspace by guiding the PM through populating context files.
 ---
 
@@ -17,7 +17,7 @@ Sets up the workspace by guiding the PM through populating context files.
 
 Route input to the right file using these structures:
 
-- **company.md** — What We Do (who you are, who it's for, core problem), Stage & Size, Current Priorities (top 2-3), Constraints (budget, headcount, tech debt, timeline)
+- **company.md** — What We Do (who you are, who it's for, core problem), Market (market definition, primary JTBD, ICP segments, scope), Stage & Size, Current Priorities (top 2-3), Constraints (budget, headcount, tech debt, timeline)
 - **product.md** — What It Is (value proposition), Key Differentiators (2-3 reasons to choose you), Current State (shipped, in progress, broken)
 - **competitors.md** — One section per competitor: what they do, strengths, weaknesses, our angle against them
 - **personas.md** — One section per persona: who they are, their goal, their pains with signal strength and a real quote
@@ -69,9 +69,10 @@ Context status:
 
 ### 5. Ask pointed follow-ups
 
-Now ask questions, but targeted, not a form. Pick 2-3 questions max based on the biggest gaps. Follow the outside-in order (company → competitors → personas → product) but don't force it.
+Now ask questions, but targeted, not a form. Pick 2-3 questions max based on the biggest gaps. Follow the outside-in order (company → market → competitors → personas → product) but don't force it.
 
 **Question style:**
+- Fill market gaps: "What space or market are you in?" "What problem are your customers hiring you to solve?"
 - Probe assumptions: "You mentioned users struggle with onboarding. Is that from data, interviews, or a hunch?"
 - Fill critical gaps: "Who are your main competitors? Even just names is fine, I can research the rest."
 - Challenge where useful: "You said you're targeting enterprise. What makes you confident that's the right segment?"
@@ -82,16 +83,18 @@ Now ask questions, but targeted, not a form. Pick 2-3 questions max based on the
 
 Minimum viable context to do useful work:
 - **Company:** know what you do, who it's for, and current priorities
+- **Market:** know what market you're in and the primary JTBD
 - **Product:** know what exists and what's broken
 - **Competitors:** at least 2-3 named
 - **Personas:** at least 1 real user type with a real pain
 
-When met, say so and offer a quick win:
-- Company solid → "Want me to run a quick competitor scan based on what you just shared? Or keep filling context?"
+When met, say so and offer the next step. Follow this order:
+- Company solid, Market thin → "I know who you are. What market or space are you in? What problem are your customers hiring you to solve?"
+- Company + Market solid → "Want me to map out who else is in this space and how they approach it?"
 - Personas solid → "You've got strong personas. Want me to synthesize any interview data you have, or keep going?"
 - Product solid → "Want me to draft a one-pager for something you're considering? Or fill in more context first?"
 
-Don't force it. If the PM wants to keep going, keep going. The goal is to show value early.
+Don't force it. If the user wants to keep going, keep going. The goal is to show value early.
 
 When all files are solid: "Context is looking good. You could run `/analyze-competitors` to go deeper on competition, or `/prd` to start speccing something out."
 
