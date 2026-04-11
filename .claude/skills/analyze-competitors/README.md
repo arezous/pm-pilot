@@ -4,16 +4,17 @@ Map competitive landscapes, research individual competitors, synthesize existing
 
 ## How to use it
 
-Type `/analyze-competitors` followed by a company name, market area, or action:
+Type `/analyze-competitors` followed by a company name, market area, or action. Or run it with no arguments to see where you are and what to do next.
 
 ```
+/analyze-competitors
 /analyze-competitors Linear
 /analyze-competitors UGC platforms
 /analyze-competitors synthesize competitors
 /analyze-competitors monthly check-in
 ```
 
-It works in four modes:
+Modes:
 
 - **Deep dive** ("look up Linear", "research Bazaarvoice") — comprehensive analysis of one competitor, updates `context/competitors.md`. If a previous deep dive exists, asks whether to refresh or start new.
 - **Landscape** ("who are our competitors?", "competitive landscape for UGC") — builds the competitor universe (direct, indirect, substitutes, potential entrants), creates structured profiles for each, and maps positioning. Pre-populates from existing deep dives when available. If 3+ deep dives already exist, offers to synthesize instead.
@@ -21,6 +22,8 @@ It works in four modes:
 - **Monitoring** ("monthly check-in", "what's changed with competitors") — lightweight update on what shifted since the last analysis, combining new internal mentions with external changes.
 
 ## What you get
+
+**No arguments:** A status snapshot and specific recommendation for what to do next. Adapts to your current state: if you have no landscape, it recommends one. If you have deep dives but no synthesis, it recommends synthesizing. If everything is current, it summarizes your competitive picture.
 
 **Deep dive:** A single-competitor research document saved to `output/competitors/`. Starts with a structured Profile Summary (extractable by landscape for pre-population), followed by full sections with source and confidence tagging. Classifies competitors by type (D/I/S/P). Ends with how you win against them.
 
