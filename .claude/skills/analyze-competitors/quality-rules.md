@@ -4,7 +4,8 @@
 
 - **Cite everything.** Every claim needs a source. Link to the article, interview, or review. No unsourced assertions.
 - **Lead with "our angle."** Every competitor entry should end with how we win against them, framed through what our personas care about.
-- **Landscape: lead with a strategic recommendation,** not a summary.
+- **Landscape: lead with the competitor universe,** not a recommendation. The universe table is the foundation.
+- **Synthesis: lead with cross-cutting patterns,** not a summary.
 
 ## Audience and tone
 

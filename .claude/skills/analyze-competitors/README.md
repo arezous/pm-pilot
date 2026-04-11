@@ -1,6 +1,6 @@
 # /analyze-competitors
 
-Research competitors, synthesize existing analysis, or track what's changed.
+Map competitive landscapes, research individual competitors, synthesize existing analysis, or track what's changed.
 
 ## How to use it
 
@@ -22,9 +22,11 @@ It works in four modes:
 
 ## What you get
 
-**Deep dive / Landscape:** A research document saved to `output/competitors/`. Every claim is cited with a source link. Each competitor entry ends with how you win against them.
+**Deep dive:** A single-competitor research document saved to `output/competitors/`. Every claim is cited with a source link. Ends with how you win against them.
 
-**Synthesis:** A strategic landscape doc built from your existing deep dives and teardowns. Focuses on cross-cutting patterns (convergence, divergence, gaps, threat ranking) rather than per-competitor summaries.
+**Landscape:** A structured competitive landscape with: universe table (all competitors typed and sortable), profile cards per competitor, positioning map with clusters and white spaces, lightweight synthesis, and coverage assessment flagging what's verified vs shallow. Pre-populates from existing deep dives.
+
+**Synthesis:** A strategic analysis built from your existing deep dives and teardowns. Focuses on cross-cutting patterns (convergence, divergence, gaps, threat ranking) rather than per-competitor summaries.
 
 **Monitoring:** A short update saved to `output/competitors/competitive-intel-[YYYY-MM].md` covering product changes, pricing shifts, strategic moves, and new internal mentions since the last report. Ends with what to react to, what to watch, and what to ignore.
 
