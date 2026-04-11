@@ -13,7 +13,7 @@ This is a product-centered PM workspace. Everything starts with understanding, n
 - `context/product.md` — what we have, what works, what doesn't
 
 **Context file structure:**
-- **company.md** — What We Do (who you are, who it's for, core problem), Stage & Size, Current Priorities (top 2-3), Constraints (budget, headcount, tech debt, timeline)
+- **company.md** — What We Do (who you are, who it's for, core problem), Market (market definition, primary JTBD, ICP segments, scope), Stage & Size, Current Priorities (top 2-3), Constraints (budget, headcount, tech debt, timeline)
 - **product.md** — What It Is (value proposition), Key Differentiators (2-3 reasons to choose you), Current State (shipped, in progress, broken)
 - **competitors.md** — One section per competitor: what they do, strengths, weaknesses, our angle against them
 - **personas.md** — One section per persona: who they are, their goal, their pains with signal strength and a real quote (e.g., "Onboarding takes too long (5/10) — 'I spent 20 minutes just connecting my store'")
