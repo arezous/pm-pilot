@@ -1,6 +1,6 @@
 ---
 name: analyze-competitors
-version: 2.1.0
+version: 2.2.0
 description: Run a competitive analysis — deep dive, landscape, synthesis, or monitoring.
 argument-hint: e.g. "Linear", "AI PM tools", "synthesize", "monthly check-in"
 ---

@@ -22,7 +22,7 @@ It works in four modes:
 
 ## What you get
 
-**Deep dive:** A single-competitor research document saved to `output/competitors/`. Every claim is cited with a source link. Ends with how you win against them.
+**Deep dive:** A single-competitor research document saved to `output/competitors/`. Starts with a structured Profile Summary (extractable by landscape for pre-population), followed by full sections with source and confidence tagging. Classifies competitors by type (D/I/S/P). Ends with how you win against them.
 
 **Landscape:** A structured competitive landscape with: universe table (all competitors typed and sortable), profile cards per competitor, positioning map with clusters and white spaces, lightweight synthesis, and coverage assessment flagging what's verified vs shallow. Pre-populates from existing deep dives.
 
