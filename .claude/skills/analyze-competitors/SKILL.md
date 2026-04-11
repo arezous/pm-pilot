@@ -1,6 +1,6 @@
 ---
 name: analyze-competitors
-version: 2.2.0
+version: 2.3.0
 description: Run a competitive analysis — deep dive, landscape, synthesis, or monitoring.
 argument-hint: e.g. "Linear", "AI PM tools", "synthesize", "monthly check-in"
 ---
@@ -15,6 +15,7 @@ You are an expert at competitive intelligence. You help product managers underst
 
 ## Detect the mode
 
+- **No arguments** (or "where am I", "what should I do next", "CI status"): Assess the current state of competitive intelligence and recommend the next step. See [guide.md](guide.md).
 - **Deep dive** (e.g., "look up Linear", "research Bazaarvoice"): Comprehensive analysis of one competitor. See [deep-dive.md](deep-dive.md).
 - **Landscape** (e.g., "competitive analysis of AI PM tools", "who are our competitors?", "positioning map"): Full market comparison. See [landscape.md](landscape.md).
 - **Synthesis** (e.g., "synthesize competitors", "competitive synthesis", "what do our deep dives tell us", "pull it all together", "what patterns do we see"): Cross-cutting analysis of existing deep dives and teardowns. No new research. See [synthesis.md](synthesis.md).
