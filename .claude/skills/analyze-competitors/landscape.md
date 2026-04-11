@@ -72,7 +72,7 @@ Plot each competitor. Then write:
 - **White spaces:** positions no one occupies
 - **Where we sit:** our current position and why
 
-## Step 4: Synthesize
+## Step 4: Summarize and assess coverage
 
 Write the synthesis section from the template:
 - Clusters and gaps (table stakes vs opportunities, over-served vs under-served)
