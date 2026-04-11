@@ -17,7 +17,7 @@ It works in four modes:
 
 - **Deep dive** ("look up Linear", "research Bazaarvoice") — comprehensive analysis of one competitor, updates `context/competitors.md`. If a previous deep dive exists, asks whether to refresh or start new.
 - **Landscape** ("who are our competitors?", "competitive landscape for UGC") — builds the competitor universe (direct, indirect, substitutes, potential entrants), creates structured profiles for each, and maps positioning. Pre-populates from existing deep dives when available. If 3+ deep dives already exist, offers to synthesize instead.
-- **Synthesis** ("synthesize competitors", "pull it all together") — cross-cutting analysis of existing deep dives and teardowns. No new web research. Flags stale docs before proceeding.
+- **Synthesis** ("synthesize competitors", "pull it all together", "what does our competitive intel tell us") — produces an actionable evidence base from existing deep dives, teardowns, and landscape docs. No new web research. Outputs opportunities, coverage gaps, and "we should" recommendations.
 - **Monitoring** ("monthly check-in", "what's changed with competitors") — lightweight update on what shifted since the last analysis, combining new internal mentions with external changes.
 
 ## What you get
@@ -26,7 +26,7 @@ It works in four modes:
 
 **Landscape:** A structured competitive landscape with: universe table (all competitors typed and sortable), profile cards per competitor, positioning map with clusters and white spaces, lightweight synthesis, and coverage assessment flagging what's verified vs shallow. Pre-populates from existing deep dives.
 
-**Synthesis:** A strategic analysis built from your existing deep dives and teardowns. Focuses on cross-cutting patterns (convergence, divergence, gaps, threat ranking) rather than per-competitor summaries.
+**Synthesis:** An actionable evidence base built from your existing research. Structured around: problem space, who's affected, competitive alternatives, your advantage, timing, and risks. Ends with top 3 opportunities ("we should" statements) and a coverage assessment flagging what's solid, what's shallow, and what to research next. Updates the Strategic Insights section of `context/competitors.md`.
 
 **Monitoring:** A short update saved to `output/competitors/competitive-intel-[YYYY-MM].md` covering product changes, pricing shifts, strategic moves, and new internal mentions since the last report. Ends with what to react to, what to watch, and what to ignore.
 

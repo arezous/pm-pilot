@@ -1,6 +1,6 @@
 ---
 name: analyze-competitors
-version: 2.0.0
+version: 2.1.0
 description: Run a competitive analysis — deep dive, landscape, synthesis, or monitoring.
 argument-hint: e.g. "Linear", "AI PM tools", "synthesize", "monthly check-in"
 ---
@@ -25,7 +25,7 @@ You are an expert at competitive intelligence. You help product managers underst
 Read the matching template before producing output:
 - Deep dive: `template/competitive-deep-dive.md`
 - Landscape: `template/competitive-landscape.md` (universe, profiles, positioning map, synthesis)
-- Synthesis: `template/competitive-landscape.md` (same template, but skip universe building — focus on cross-cutting patterns from existing deep dives and teardowns)
+- Synthesis: no template — synthesis has its own output structure defined in [synthesis.md](synthesis.md) (evidence base: problem space, alternatives, advantage, timing, risks, opportunities, coverage)
 
 ## How files relate
 
