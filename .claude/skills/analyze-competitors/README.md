@@ -16,7 +16,7 @@ Type `/analyze-competitors` followed by a company name, market area, or action:
 It works in four modes:
 
 - **Deep dive** ("look up Linear", "research Bazaarvoice") — comprehensive analysis of one competitor, updates `context/competitors.md`. If a previous deep dive exists, asks whether to refresh or start new.
-- **Landscape** ("who are our competitors?", "competitive landscape for UGC") — full market comparison with a strategic recommendation. If 3+ deep dives already exist, offers to synthesize instead.
+- **Landscape** ("who are our competitors?", "competitive landscape for UGC") — builds the competitor universe (direct, indirect, substitutes, potential entrants), creates structured profiles for each, and maps positioning. Pre-populates from existing deep dives when available. If 3+ deep dives already exist, offers to synthesize instead.
 - **Synthesis** ("synthesize competitors", "pull it all together") — cross-cutting analysis of existing deep dives and teardowns. No new web research. Flags stale docs before proceeding.
 - **Monitoring** ("monthly check-in", "what's changed with competitors") — lightweight update on what shifted since the last analysis, combining new internal mentions with external changes.
 
