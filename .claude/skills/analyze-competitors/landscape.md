@@ -89,4 +89,4 @@ Then write the coverage assessment:
 
 Save to `output/competitors/competitive-landscape-[market]-[YYYY-MM-DD].md`.
 Include `**Status:** Draft` in the body.
-Offer to update `context/competitors.md` with new or updated entries.
+Offer to update `context/competitors.md` following the structure in `template/context-competitors.md`: update the Tracked Competitors list (names by type), add or update individual entries, but do NOT copy the full universe table. The compact list is the context version. The full table lives in the output doc.
